@@ -1,0 +1,198 @@
+{
+  "phase": "1",
+  "type": "checkpoint (design-first, no solver)",
+  "real_dem": "SUCCESS",
+  "scope_note": "Evidence contract + evidence-based connectivity + gated connected-domain only. No propagation/solver (J.7).",
+  "scenario_A_current_evidence": {
+    "contract": {
+      "plot": [
+        31.05,
+        76.53
+      ],
+      "plot_level_credible": false,
+      "weakest_status": "missing",
+      "missing_plot_level_evidence": [
+        "high_res_dem",
+        "local_survey"
+      ],
+      "rows": [
+        {
+          "category": "channel_centerline",
+          "status": "available",
+          "source": "OpenStreetMap",
+          "reference": "919730633",
+          "note": "",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "connectivity": {
+      "status": "unresolved",
+      "reason": "Hydraulic connectivity unresolved at 30 m DEM resolution.",
+      "path_established": false,
+      "checks": [
+        {
+          "check": "channel_centerline_present",
+          "passed": true,
+          "description": "Sutlej centreline available and anchored",
+          "detail": {
+            "category": "channel_centerline",
+            "status": "available",
+            "source": "OpenStreetMap",
+            "reference": "919730633",
+            "note": "",
+            "confidence": "medium"
+          }
+        },
+        {
+          "check": "documented_local_drainage",
+          "passed": false,
+          "description": "A documented channel/drain/survey link from channel to plot",
+          "detail": {
+            "channels_drains": null,
+            "local_survey": null
+          }
+        },
+        {
+          "check": "terrain_reach_resolvable",
+          "passed": false,
+          "description": "DEM gradient can resolve a drainage path at the plot (not flat)",
+          "detail": null
+        },
+        {
+          "check": "definitive_barrier",
+          "passed": false,
+          "description": "Survey-confirmed embankment with no hydraulic opening separates plot",
+          "detail": null
+        }
+      ]
+    },
+    "domain": {
+      "outcome": "unresolved",
+      "domain_cells": null,
+      "domain_extent_sqkm": null,
+      "message": "Hydraulic connectivity unresolved at 30 m DEM resolution.",
+      "notes": [
+        "Hydraulic connectivity unresolved at 30 m DEM resolution."
+      ]
+    },
+    "interpretation": "With only the Sutlej centreline available and no local survey/channels-drains/high-res DEM, on the flat 30 m reach the correct output is the J.1 'unresolved' statement \u2014 NOT a fabricated low risk or flood depth."
+  },
+  "scenario_B_illustrative_full_evidence": {
+    "contract": {
+      "plot": [
+        31.05,
+        76.53
+      ],
+      "plot_level_credible": true,
+      "weakest_status": "missing",
+      "missing_plot_level_evidence": [],
+      "rows": [
+        {
+          "category": "channel_centerline",
+          "status": "available",
+          "source": "OpenStreetMap",
+          "reference": "919730633",
+          "note": "",
+          "confidence": "medium"
+        },
+        {
+          "category": "channels_drains",
+          "status": "available",
+          "source": "Local survey",
+          "reference": null,
+          "note": "mapped drain C connects plot to Sutlej",
+          "confidence": "medium"
+        },
+        {
+          "category": "local_survey",
+          "status": "available",
+          "source": "Survey",
+          "reference": null,
+          "note": "",
+          "confidence": "medium"
+        },
+        {
+          "category": "high_res_dem",
+          "status": "available",
+          "source": "Lidar / drone",
+          "reference": null,
+          "note": "",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "connectivity": {
+      "status": "unresolved",
+      "reason": "Hydraulic connectivity unresolved at 30 m DEM resolution.",
+      "path_established": false,
+      "checks": [
+        {
+          "check": "channel_centerline_present",
+          "passed": true,
+          "description": "Sutlej centreline available and anchored",
+          "detail": {
+            "category": "channel_centerline",
+            "status": "available",
+            "source": "OpenStreetMap",
+            "reference": "919730633",
+            "note": "",
+            "confidence": "medium"
+          }
+        },
+        {
+          "check": "documented_local_drainage",
+          "passed": true,
+          "description": "A documented channel/drain/survey link from channel to plot",
+          "detail": {
+            "channels_drains": {
+              "category": "channels_drains",
+              "status": "available",
+              "source": "Local survey",
+              "reference": null,
+              "note": "mapped drain C connects plot to Sutlej",
+              "confidence": "medium"
+            },
+            "local_survey": {
+              "category": "local_survey",
+              "status": "available",
+              "source": "Survey",
+              "reference": null,
+              "note": "",
+              "confidence": "medium"
+            }
+          }
+        },
+        {
+          "check": "terrain_reach_resolvable",
+          "passed": false,
+          "description": "DEM gradient can resolve a drainage path at the plot (not flat)",
+          "detail": null
+        },
+        {
+          "check": "definitive_barrier",
+          "passed": false,
+          "description": "Survey-confirmed embankment with no hydraulic opening separates plot",
+          "detail": null
+        }
+      ]
+    },
+    "domain": {
+      "outcome": "unresolved",
+      "domain_cells": null,
+      "domain_extent_sqkm": null,
+      "message": "Hydraulic connectivity unresolved at 30 m DEM resolution.",
+      "notes": [
+        "Hydraulic connectivity unresolved at 30 m DEM resolution."
+      ]
+    },
+    "interpretation": "On the flat real reach, even with full plot-level evidence the terrain itself cannot resolve a routing direction (D8=flat), so connectivity stays UNRESOLVED from the DEM alone. This proves the no-fabricated-path rule: availability of evidence does not auto-manufacture a path \u2014 the solver (with water surface + momentum, later phase) plus the high-res DEM is what may resolve it."
+  },
+  "design_contracts_demonstrated": [
+    "J.1 no-fabricated-path: UNRESOLVED emitted verbatim when evidence/terrain inadequate",
+    "J.3 constraining-observations: plot_level_credible False without survey+high-res",
+    "J.4 evidence-based connectivity: requires channel + documented link + resolvable reach",
+    "J.2 gated domain: domain extracted only on CONNECTED; None otherwise"
+  ],
+  "total_runtime_s": 6.62
+}

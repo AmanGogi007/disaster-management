@@ -1,0 +1,124 @@
+{
+  "phase": "V0.3 Phase 1g",
+  "generated_at_utc": "2026-09-01T21:08:20.260679+00:00",
+  "plot": {
+    "lat": 31.05,
+    "lon": 76.53
+  },
+  "bhuvan_probe": "portal root: HTTP 200; no CartoDEM layer token in body | wms GetCapabilities: fetch failure (HTTPError: HTTP Error 404: Not Found) | ows GetCapabilities: fetch failure (HTTPError: HTTP Error 404: Not Found) \u2014 tile/coverage for the plot NOT verified.",
+  "baseline_contract": {
+    "plot": [
+      31.05,
+      76.53
+    ],
+    "plot_level_credible": false,
+    "weakest_status": "missing",
+    "missing_plot_level_evidence": [
+      "local_survey",
+      "high_res_dem"
+    ],
+    "rows": [
+      {
+        "category": "channel_centerline",
+        "status": "available",
+        "source": "OpenStreetMap",
+        "reference": "Sutlej main stem 919730633/377207447/165931479/41539116 (reconciled)",
+        "note": "anchored main-stem centreline, min 0.129 km; unconnected 248023200 reported.",
+        "confidence": "medium"
+      },
+      {
+        "category": "channels_drains",
+        "status": "available",
+        "source": "OpenStreetMap",
+        "reference": "377207446",
+        "note": "local canal/drain within 3 km radius.",
+        "confidence": "medium"
+      },
+      {
+        "category": "embankments_road_rail",
+        "status": "available",
+        "source": "OpenStreetMap",
+        "reference": "680091133, 919730631",
+        "note": "rail barriers mapped; openings/no-openings NOT survey-confirmed (barrier note absent -> not a definitive NOT_CONNECTED).",
+        "confidence": "medium"
+      },
+      {
+        "category": "bridges_culverts",
+        "status": "available",
+        "source": "OpenStreetMap",
+        "reference": "254573869, 254573867",
+        "note": "crossings mapped; invert/soffit field measurement required (survey spec).",
+        "confidence": "medium"
+      },
+      {
+        "category": "gauge_observations",
+        "status": "missing",
+        "source": "-",
+        "reference": "-",
+        "note": "CWC has no Rohira/Ropar Sutlej resource (Phase 1d); any delivery must be provenance-tagged.",
+        "confidence": "medium"
+      },
+      {
+        "category": "documented_flood_extents",
+        "status": "missing",
+        "source": "-",
+        "reference": "-",
+        "note": "documented 1988/2019 events exist but corridor mapping not ingested this phase.",
+        "confidence": "medium"
+      },
+      {
+        "category": "local_survey",
+        "status": "missing",
+        "source": "field survey (to be delivered)",
+        "reference": "survey_spec",
+        "note": "nothing integrated yet \u2014 spec only.",
+        "confidence": "medium"
+      },
+      {
+        "category": "high_res_dem",
+        "status": "missing",
+        "source": "(to be acquired)",
+        "reference": "survey_spec sources",
+        "note": "no sub-30 m DEM integrated yet.",
+        "confidence": "medium"
+      },
+      {
+        "category": "flood_control",
+        "status": "not_applicable",
+        "source": "-",
+        "reference": "-",
+        "note": "no mapped flood control.",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "acquisition_gate": "Newly acquired data is integrated ONLY through the verified-acquisition gate: a DEM raster only after it really exists, reads successfully, covers the plot, and carries an explicit native resolution + vertical datum; survey points only after each claim is provenance-tagged, datum-tagged, accuracy-tagged and marked verified. Unverified or fabricated claims are refused. Integrating fine-scale data allows connectivity to be RE-ASSESSED \u2014 it never by itself resolves connectivity and never runs the hydraulic solver.",
+  "dem_file_requirements": [
+    "GeoTIFF (or raster readable by rasterio) in EPSG:4326.",
+    "Must cover the plot cell, ideally with a \u22650.005\u00b0 (~0.5 km) margin.",
+    "Must carry an explicit native resolution and a named vertical datum ('vertical_datum' on intake; else the provider/product datum must be recorded by the caller).",
+    "Native resolution < 30 m is required for the HIGH_RES_DEM category to be plot-level usable; a \u226530 m product integrating would be PARTIAL, not available.",
+    "Datums (EGM96 / EGM2008 / MSL) must be declared on intake; they are never fused silently."
+  ],
+  "dem_ingest": null,
+  "survey_ingest": null,
+  "reassessment": {
+    "connectivity_status": "unresolved",
+    "reason": "Refused by acquisition gate: no verified fine-scale data (HIGH_RES_DEM available / verified LOCAL_SURVEY) integrated yet.",
+    "checks": [],
+    "path_established": false,
+    "solver_run": false,
+    "plot_level_credible": false,
+    "missing_plot_level_evidence": [
+      "local_survey",
+      "high_res_dem"
+    ],
+    "gate_applied": true
+  },
+  "unresolved_message": "Hydraulic connectivity unresolved at 30 m DEM resolution.",
+  "next_actions": [
+    "Deliver the survey per simulations/outputs/survey_spec.md via --survey-json (rows: category/target/value_m/provenance/vertical_datum/horizontal_system/accuracy_m/verified).",
+    "Acquire the Cartosat-1/Bhuvan sub-30 m tile for the plot, download it as GeoTIFF, and integrate via --dem-tif (declared datum + resolution).",
+    "Only after verified survey + sub-30 m DEM are integrated: re-run connectivity (this workflow), then (if genuinely resolved) the solver phase may begin."
+  ]
+}

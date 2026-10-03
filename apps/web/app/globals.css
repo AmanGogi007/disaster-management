@@ -1,0 +1,852 @@
+:root {
+  --bg: #0b0f14;
+  --panel: #121821;
+  --panel-2: #182232;
+  --panel-3: #1e2a3a;
+  --border: #243042;
+  --text: #e6edf3;
+  --muted: #8b95a7;
+  --accent: #4f8cff;
+  --green: #2ea043;
+  --yellow: #d29922;
+  --orange: #db7c34;
+  --red: #f85149;
+  --cyan: #5ac8fa;
+  --radius: 6px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 14px;
+  height: 100%;
+  line-height: 1.5;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Landing ── */
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-header {
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.landing-header h1 { font-size: 18px; margin: 0; font-weight: 700; }
+.landing-header .ver { color: var(--muted); font-size: 12px; }
+
+.landing-hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.landing-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.landing-card h2 {
+  font-size: 20px;
+  margin: 0 0 4px;
+}
+.landing-card .sub {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0 0 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 600;
+}
+.field input, .field select {
+  padding: 10px 12px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+.field input:focus, .field select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(79, 140, 255, 0.2);
+}
+.field input::placeholder { color: #4a5568; }
+
+.btn {
+  background: var(--accent);
+  color: white;
+  border: 0;
+  padding: 11px 18px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%;
+  transition: opacity 0.15s;
+}
+.btn:hover { opacity: 0.9; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-secondary {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+.btn-secondary:hover { background: var(--panel-3); }
+.btn-danger { background: var(--red); }
+.btn-sm { padding: 6px 12px; font-size: 12px; width: auto; }
+
+.input {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  padding: 8px 10px;
+  font-size: 13px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.input:focus { outline: none; border-color: var(--cyan); }
+h4 { color: var(--text); font-weight: 600; font-size: 13px; }
+.muted { color: var(--muted); }
+.dem-src { background: var(--panel-2); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; }
+
+.map-area { position: relative; }
+.map-legend {
+  position: absolute; bottom: 16px; left: 16px; z-index: 5;
+  background: rgba(15, 19, 26, 0.9); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 12px; display: flex; gap: 14px;
+  font-size: 12px; color: var(--text); pointer-events: none;
+}
+.map-legend .lg { display: flex; align-items: center; gap: 6px; }
+.map-legend .sw { width: 14px; height: 4px; display: inline-block; border-radius: 2px; }
+
+.search-row { display: flex; gap: 8px; }
+.search-row input { flex: 1; min-width: 0; }
+
+.landing-footer {
+  padding: 16px 32px;
+  border-top: 1px solid var(--border);
+  background: var(--panel);
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ── Dashboard layout ── */
+.dashboard { display: grid; grid-template-rows: auto 1fr; height: 100vh; }
+
+.dash-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dash-header h1 { font-size: 15px; margin: 0; }
+.dash-header .nav { display: flex; gap: 8px; align-items: center; }
+.dash-header .nav a {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: var(--radius);
+  color: var(--muted);
+  transition: background 0.15s;
+}
+.dash-header .nav a:hover { background: var(--panel-2); color: var(--text); text-decoration: none; }
+.dash-header .nav a.active { background: var(--panel-2); color: var(--accent); }
+
+.dash-body {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  min-height: 0;
+}
+
+.dash-sidebar {
+  border-right: 1px solid var(--border);
+  background: var(--panel);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-sidebar .section {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.dash-sidebar .section h3 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
+.map-area {
+  position: relative;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.map-view { position: relative; flex: 1 1 auto; min-height: 420px; }
+.map-view .map { position: absolute; inset: 0; }
+
+/* ── Pipeline ── */
+.pipeline-wrap {
+  flex: 0 0 auto;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel);
+}
+.pipeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+.pipe-stage {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.pipe-dot { font-size: 16px; }
+.pipe-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text);
+}
+.pipe-detail {
+  font-size: 10.5px;
+  color: var(--muted);
+  line-height: 1.35;
+}
+.pipe-link { display: none; }
+
+/* ── Results ── */
+.results-wrap {
+  flex: 0 0 auto;
+  padding: 18px 20px;
+  border-top: 1px solid var(--border);
+  background: var(--panel);
+}
+.results h2 { margin: 0 0 6px; font-size: 18px; }
+.result-status {
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.result-status.incomplete { color: var(--yellow); }
+.result-status.ok { color: var(--green); }
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.result-item {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.result-item .rk {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  font-weight: 600;
+}
+.result-item .rv { font-size: 13px; font-weight: 600; color: var(--text); }
+.result-item .rv.ok { color: var(--green); }
+.result-item .rv.warn { color: var(--orange); }
+.result-item .rv.req { color: var(--red); }
+
+.why-banner {
+  background: var(--panel-2);
+  border: 1px solid rgba(210, 153, 34, 0.4);
+  border-left: 4px solid var(--yellow);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+.why-banner strong { font-size: 14px; color: var(--text); }
+.why-banner p { margin: 8px 0 0; font-size: 12.5px; color: var(--text); }
+.why-banner .why-sub { color: var(--muted); font-size: 11.5px; }
+
+/* ── Location picker (landing) ── */
+.picker-wrap {
+  margin-top: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.picker-map { height: 260px; width: 100%; }
+.picker-hint {
+  padding: 8px 12px;
+  font-size: 11.5px;
+  color: var(--muted);
+  background: var(--panel-2);
+  border-top: 1px solid var(--border);
+}
+
+/* ── Status badges ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.badge.available { background: rgba(46, 160, 67, 0.15); color: var(--green); }
+.badge.partial { background: rgba(210, 153, 34, 0.15); color: var(--yellow); }
+.badge.missing { background: rgba(248, 81, 73, 0.15); color: var(--red); }
+.badge.unresolved { background: rgba(90, 200, 250, 0.15); color: var(--cyan); }
+.badge.unavailable { background: rgba(139, 149, 167, 0.15); color: var(--muted); }
+.badge.not_applicable { background: rgba(139, 149, 167, 0.08); color: #5a6070; }
+.badge.ready { background: rgba(46, 160, 67, 0.15); color: var(--green); }
+.badge.blocked { background: rgba(248, 81, 73, 0.15); color: var(--red); }
+
+/* ── Evidence grid ── */
+.ev-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.ev-card {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  transition: border-color 0.15s;
+}
+.ev-card:hover { border-color: var(--accent); }
+.ev-card .ev-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
+.ev-card .ev-label { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.ev-card .ev-source { font-size: 11px; color: var(--muted); }
+.ev-card .ev-note { font-size: 12px; color: var(--text); margin-top: 4px; line-height: 1.4; }
+
+/* ── Solver panel ── */
+.solver-panel {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.solver-panel.blocked { border-left: 3px solid var(--red); }
+.solver-panel.ready { border-left: 3px solid var(--green); }
+.solver-panel h3 { margin: 0 0 8px; font-size: 14px; }
+.solver-panel .reason { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+.solver-panel .checklist { list-style: none; margin: 0; padding: 0; }
+.solver-panel .checklist li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.solver-panel .checklist li:last-child { border-bottom: 0; }
+.solver-panel .checklist .check { width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0; }
+.solver-panel .checklist .check.done { background: var(--green); color: white; }
+.solver-panel .checklist .check.wait { background: var(--red); color: white; }
+
+/* ── Key-value rows ── */
+.kv { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; font-size: 12px; }
+.kv .k { color: var(--muted); }
+.kv .v { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* ── Evidence detail page ── */
+.evidence-page { padding: 24px; max-width: 960px; margin: 0 auto; }
+.evidence-page h2 { font-size: 18px; margin: 0 0 16px; }
+
+.ev-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+.ev-detail-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.ev-detail-card .ev-detail-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+.ev-detail-card .ev-detail-category { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.ev-detail-card .ev-detail-source { font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+.ev-detail-card .ev-detail-note { font-size: 12px; color: var(--text); line-height: 1.5; }
+.ev-detail-card .ev-detail-meta { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); }
+
+/* ── Report page ── */
+.report-page { padding: 24px; max-width: 800px; margin: 0 auto; }
+.report-page h2 { font-size: 20px; margin: 0 0 8px; }
+.report-page .report-sub { color: var(--muted); font-size: 13px; margin: 0 0 24px; }
+
+.report-section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.report-section h3 { margin: 0 0 12px; font-size: 15px; }
+.report-section p { margin: 0 0 8px; font-size: 13px; line-height: 1.6; }
+.report-section ul { margin: 4px 0 0; padding-left: 18px; font-size: 13px; }
+.report-section ul li { margin-bottom: 4px; }
+
+.report-section.verified { border-left: 3px solid var(--green); }
+.report-section.unavailable { border-left: 3px solid var(--muted); }
+.report-section.unresolved { border-left: 3px solid var(--cyan); }
+.report-section.assumptions { border-left: 3px solid var(--yellow); }
+.report-section.actions { border-left: 3px solid var(--accent); }
+
+/* ── Acquisition workflow ── */
+.workflow {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.workflow h3 { margin: 0 0 12px; font-size: 14px; }
+.workflow .step {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+}
+.workflow .step:last-child { border-bottom: 0; }
+.workflow .step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.workflow .step-num.done { background: var(--green); color: white; border-color: var(--green); }
+.workflow .step-num.active { background: var(--accent); color: white; border-color: var(--accent); }
+.workflow .step-body { flex: 1; }
+.workflow .step-title { font-weight: 600; margin-bottom: 2px; }
+.workflow .step-desc { color: var(--muted); }
+
+/* ── Loading / error states ── */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: var(--muted);
+  font-size: 13px;
+  gap: 8px;
+}
+.loading::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.error-banner {
+  background: rgba(248, 81, 73, 0.1);
+  border: 1px solid rgba(248, 81, 73, 0.3);
+  border-radius: var(--radius);
+  padding: 12px;
+  color: var(--red);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.note-box {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  padding: 12px;
+  border-radius: var(--radius);
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+/* ── Map layers ── */
+.layer-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.layer-toggle input[type="checkbox"] {
+  accent-color: var(--accent);
+}
+.layer-toggle .layer-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   GIS DASHBOARD — Location Hazard Intelligence Engine
+   ═══════════════════════════════════════════════════════════════ */
+
+.gis-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+/* ── Header ── */
+.gis-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.gis-brand { display: flex; align-items: center; gap: 12px; }
+.gis-logo {
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--accent); color: #fff;
+  border-radius: var(--radius);
+  font-size: 16px;
+}
+.gis-brand h1 { font-size: 17px; margin: 0; font-weight: 700; letter-spacing: 0.01em; }
+.gis-header-sub { margin: 0; font-size: 12px; color: var(--muted); }
+.gis-header-meta { display: flex; gap: 8px; }
+
+/* ── Workspace ── */
+.gis-workspace {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 65fr 35fr;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* ── Map column ── */
+.gis-map-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border-right: 1px solid var(--border);
+  background: #0e141b;
+}
+.gis-map-header {
+  padding: 8px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  text-transform: uppercase;
+}
+.gis-map-stage {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  background: #0a0f14;
+}
+
+/* Landmark map container */
+.landmark-map-wrap { position: relative; width: 100%; height: 100%; min-height: 480px; }
+.landmark-map { position: absolute; inset: 0; }
+.gis-marker {
+  width: 22px; height: 22px;
+  background: var(--red);
+  border: 2px solid #fff;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+.map-coord-footer {
+  position: absolute; left: 10px; bottom: 10px; z-index: 5;
+  background: rgba(15,19,26,0.9);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px 10px;
+  font-size: 11px;
+  color: var(--text);
+  display: flex; gap: 14px;
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+}
+.map-coord-footer .coord-km { color: var(--cyan); }
+.map-error-banner {
+  position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 6;
+  background: rgba(248,81,73,0.15);
+  border: 1px solid rgba(248,81,73,0.4);
+  color: var(--red);
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  font-size: 12px;
+  max-width: 80%;
+}
+.map-loading-overlay {
+  position: absolute; inset: 0; z-index: 6;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 8px;
+  background: rgba(10,15,20,0.6);
+  color: var(--text);
+  font-size: 13px;
+}
+.map-loading-overlay .spinner {
+  width: 30px; height: 30px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+/* Empty map state */
+.gis-empty-map {
+  height: 100%;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  color: var(--muted);
+}
+.gis-empty-icon { font-size: 44px; margin-bottom: 12px; opacity: 0.7; }
+.gis-empty-title { font-size: 16px; font-weight: 600; color: var(--text); margin: 0 0 6px; }
+.gis-empty-sub { font-size: 12.5px; line-height: 1.5; max-width: 320px; margin: 0; color: var(--muted); }
+.gis-empty-sub code { background: var(--panel-2); padding: 2px 6px; border-radius: 4px; color: var(--cyan); font-size: 12px; }
+
+/* ── Controls column ── */
+.gis-controls-col {
+  overflow-y: auto;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+.gis-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+.gis-panel-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.gis-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+.gis-field label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 600;
+}
+.gis-search-row { display: flex; gap: 6px; }
+.gis-search-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 9px 12px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 13px;
+}
+.gis-search-row input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px rgba(79,140,255,0.2); }
+.gis-search-row input::placeholder { color: #46536a; }
+.gis-btn-search { width: auto; padding: 9px 16px; font-size: 13px; flex-shrink: 0; }
+.gis-btn-assess { width: 100%; margin-top: 4px; }
+.gis-btn-assess:disabled { opacity: 0.45; }
+
+.gis-locate-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 8px 0; border-bottom: 1px solid var(--border); margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+.gis-locate-note { font-size: 11px; color: var(--muted); }
+.gis-btn-locate {
+  width: auto; flex-shrink: 0; font-size: 12px; padding: 7px 12px;
+  background: transparent; border: 1px dashed var(--accent); color: var(--accent);
+  border-radius: var(--radius); cursor: pointer; transition: background 0.15s ease;
+}
+.gis-btn-locate:hover:not(:disabled) { background: rgba(79,140,255,0.12); }
+.gis-btn-locate:disabled { opacity: 0.55; cursor: default; }
+
+.gis-resolved-row {
+  display: flex; align-items: baseline; gap: 8px;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 10px;
+}
+.gis-resolved-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; flex-shrink: 0; }
+.gis-resolved-status { margin-left: auto; }
+.gis-tag {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.05em;
+  text-transform: uppercase; padding: 3px 8px; border-radius: 20px;
+  white-space: nowrap;
+}
+.gis-tag-default { color: #c9a227; background: rgba(201,162,39,0.12); border: 1px solid rgba(201,162,39,0.4); }
+.gis-tag-user { color: var(--green); background: rgba(46,204,113,0.12); border: 1px solid rgba(46,204,113,0.4); }
+.gis-tag-muted { color: var(--muted); background: var(--panel-2); border: 1px solid var(--border); }
+.gis-resolved-detail { font-size: 12.5px; color: var(--text); line-height: 1.35; padding-bottom: 10px; }
+
+.gis-coords-row { display: flex; gap: 8px; margin-bottom: 10px; }
+.gis-coord-chip {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 5px 10px;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+.gis-coord-chip b { color: var(--muted); font-weight: 600; margin-right: 4px; }
+
+.gis-radius-field { margin-bottom: 14px; }
+.gis-radius-val { color: var(--accent); font-weight: 700; }
+.gis-slider {
+  width: 100%;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+.gis-radius-scale {
+  display: flex; justify-content: space-between;
+  font-size: 10px; color: var(--muted);
+  margin-top: 2px;
+}
+
+/* ── Pipeline ── */
+.gis-pipeline { display: flex; flex-direction: column; gap: 6px; }
+.gis-pipe-stage {
+  display: flex; align-items: center; gap: 10px;
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--panel-2);
+}
+.gis-pipe-stage.done { border-color: rgba(46,160,67,0.4); }
+.gis-pipe-stage.current { border-color: var(--accent); background: rgba(79,140,255,0.08); }
+.gis-pipe-stage.blocked { border-color: rgba(248,81,73,0.4); }
+.gis-pipe-stage.pending { opacity: 0.6; }
+.gis-pipe-dot { width: 20px; text-align: center; font-size: 13px; flex-shrink: 0; }
+.gis-pipe-label { font-size: 12px; font-weight: 600; color: var(--text); }
+.gis-pipe-stage.pending .gis-pipe-label { color: var(--muted); }
+.gis-pipe-stage.blocked .gis-pipe-label { color: var(--red); }
+.gis-pipe-note {
+  margin-top: 10px;
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+/* ── Provenance ── */
+.gis-provenance { display: flex; flex-direction: column; gap: 6px; }
+.gis-prov-row {
+  display: flex; justify-content: space-between; gap: 12px;
+  font-size: 11.5px;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(36,48,66,0.5);
+}
+.gis-prov-row:last-child { border-bottom: 0; }
+.gis-prov-row span:first-child { color: var(--muted); flex-shrink: 0; }
+.gis-prov-row span:last-child { color: var(--text); text-align: right; }
+.gis-prov-row .mono { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 10.5px; }
+.gis-prov-warn { color: var(--yellow) !important; }
+
+/* Flood model locked note */
+.gis-note-blocked {
+  background: rgba(248,81,73,0.08);
+  border: 1px solid rgba(248,81,73,0.35);
+  border-left: 3px solid var(--red);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+}
+.gis-note-blocked strong { font-size: 12px; color: var(--red); letter-spacing: 0.04em; }
+.gis-note-blocked p { margin: 6px 0 0; font-size: 11.5px; color: var(--text); line-height: 1.45; opacity: 0.9; }
+
+/* Error banner fixed position */
+.gis-error-fixed {
+  position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%);
+  z-index: 50;
+  margin: 0;
+  display: flex; align-items: center; gap: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+.error-icon { font-weight: 700; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .gis-workspace { grid-template-columns: 1fr; overflow: visible; }
+  .gis-map-col { border-right: 0; border-bottom: 1px solid var(--border); }
+  .gis-map-stage { min-height: 420px; }
+}
+@media (max-width: 560px) {
+  .gis-header { padding: 10px 14px; }
+  .gis-controls-col { padding: 10px; }
+}

@@ -1,0 +1,438 @@
+{
+  "phase": "V0.3 Phase 1b",
+  "fetched_at_utc": "2026-09-01T18:38:04.201049+00:00",
+  "plot": {
+    "lat": 31.05,
+    "lon": 76.53
+  },
+  "corridor_bbox": {
+    "south": 30.98,
+    "west": 76.3,
+    "north": 31.47,
+    "east": 76.68
+  },
+  "radius_km": 3.0,
+  "prologue": "Evidence gathered from OpenStreetMap (Overpass) + recorded availability for non-OSM sources. No missing evidence is converted into an assumption.",
+  "records": [
+    {
+      "category": "channel_centerline",
+      "status": "conflicting",
+      "count": 5,
+      "source": "OpenStreetMap",
+      "dataset": "osm-overpass",
+      "retrieved_at": "2026-09-01T18:37:53.616192+00:00",
+      "license": "ODbL 1.0 \u2014 \u00a9 OpenStreetMap contributors",
+      "resolution_note": "OSM centreline; horizontal accuracy ~meters; no width/depth.",
+      "datum_note": "OSM geometry is WGS84 (EPSG:4326); no vertical datum \u2014 relates to DEM only via horizontal CRS; do NOT use for absolute elevation.",
+      "coverage_km": 3.0,
+      "confidence": "low",
+      "note": "Found 5 river ways within 3.0 km; reconcile which is the Sutlej main stem.",
+      "sample": [
+        {
+          "osm_id": "41539116",
+          "name": "Sutlej",
+          "tags": {
+            "name": "Sutlej",
+            "waterway": "river"
+          },
+          "mid": [
+            31.1004515,
+            76.5696335
+          ],
+          "distance_km": 6.762
+        },
+        {
+          "osm_id": "165931479",
+          "name": "Sutlej",
+          "tags": {
+            "name": "Sutlej",
+            "waterway": "river"
+          },
+          "mid": [
+            31.0141444,
+            76.5390057
+          ],
+          "distance_km": 4.078
+        },
+        {
+          "osm_id": "248023200",
+          "name": null,
+          "tags": {
+            "waterway": "river"
+          },
+          "mid": [
+            31.0531429,
+            76.5835038
+          ],
+          "distance_km": 5.109
+        },
+        {
+          "osm_id": "377207447",
+          "name": null,
+          "tags": {
+            "waterway": "river"
+          },
+          "mid": [
+            31.0460159,
+            76.5302704
+          ],
+          "distance_km": 0.444
+        },
+        {
+          "osm_id": "919730633",
+          "name": "Sutlej",
+          "tags": {
+            "name": "Sutlej",
+            "waterway": "river"
+          },
+          "mid": [
+            31.0488649,
+            76.527392
+          ],
+          "distance_km": 0.279
+        }
+      ]
+    },
+    {
+      "category": "channels_drains",
+      "status": "obtained",
+      "count": 1,
+      "source": "OpenStreetMap",
+      "dataset": "osm-overpass",
+      "retrieved_at": "2026-09-01T18:37:53.616334+00:00",
+      "license": "ODbL 1.0 \u2014 \u00a9 OpenStreetMap contributors",
+      "resolution_note": "OSM drain/canal/stream; no bathymetry; ~meter x-y.",
+      "datum_note": "OSM geometry is WGS84 (EPSG:4326); no vertical datum \u2014 relates to DEM only via horizontal CRS; do NOT use for absolute elevation.",
+      "coverage_km": 3.0,
+      "confidence": "medium",
+      "note": "Local channels/drains/streams \u2014 found 1.",
+      "sample": [
+        {
+          "osm_id": "377207446",
+          "name": null,
+          "tags": {
+            "waterway": "canal"
+          },
+          "mid": [
+            31.0496666,
+            76.5740078
+          ],
+          "distance_km": 4.192
+        }
+      ]
+    },
+    {
+      "category": "embankments_road_rail",
+      "status": "obtained",
+      "count": 2,
+      "source": "OpenStreetMap",
+      "dataset": "osm-overpass",
+      "retrieved_at": "2026-09-01T18:37:59.672767+00:00",
+      "license": "ODbL 1.0 \u2014 \u00a9 OpenStreetMap contributors",
+      "resolution_note": "Identifies embankments/roads/railways that may act as barriers; not a hydraulic analysis \u2014 gaps/culverts not assessed here.",
+      "datum_note": "OSM geometry is WGS84 (EPSG:4326); no vertical datum \u2014 relates to DEM only via horizontal CRS; do NOT use for absolute elevation.",
+      "coverage_km": 3.0,
+      "confidence": "medium",
+      "note": "Roads/railways/embankments (potential barriers) \u2014 found 2.",
+      "sample": [
+        {
+          "osm_id": "680091133",
+          "name": null,
+          "tags": {
+            "railway": "rail"
+          },
+          "mid": [
+            31.0372198,
+            76.5724619
+          ],
+          "distance_km": 4.288
+        },
+        {
+          "osm_id": "919730631",
+          "name": null,
+          "tags": {
+            "railway": "rail"
+          },
+          "mid": [
+            31.0351511,
+            76.5843062
+          ],
+          "distance_km": 5.431
+        }
+      ]
+    },
+    {
+      "category": "bridges_culverts",
+      "status": "obtained",
+      "count": 2,
+      "source": "OpenStreetMap",
+      "dataset": "osm-overpass",
+      "retrieved_at": "2026-09-01T18:38:02.634975+00:00",
+      "license": "ODbL 1.0 \u2014 \u00a9 OpenStreetMap contributors",
+      "resolution_note": "OSM point/way locations; effective opening size NOT available \u2014 treat as locations only.",
+      "datum_note": "OSM geometry is WGS84 (EPSG:4326); no vertical datum \u2014 relates to DEM only via horizontal CRS; do NOT use for absolute elevation.",
+      "coverage_km": 3.0,
+      "confidence": "medium",
+      "note": "Bridges/culverts/tunnels \u2014 found 2.",
+      "sample": [
+        {
+          "osm_id": "254573867",
+          "name": "MDR55",
+          "tags": {
+            "bridge": "yes",
+            "highway": "secondary",
+            "ref": "MDR55"
+          },
+          "mid": [
+            31.0731321,
+            76.529787
+          ],
+          "distance_km": 2.572
+        },
+        {
+          "osm_id": "254573869",
+          "name": "MDR55",
+          "tags": {
+            "bridge": "yes",
+            "highway": "secondary",
+            "ref": "MDR55"
+          },
+          "mid": [
+            31.0449502,
+            76.5141504
+          ],
+          "distance_km": 1.611
+        }
+      ]
+    },
+    {
+      "category": "flood_control",
+      "status": "unavailable",
+      "count": 0,
+      "source": "OpenStreetMap",
+      "dataset": "osm-overpass",
+      "retrieved_at": "2026-09-01T18:38:04.200957+00:00",
+      "license": "ODbL 1.0 \u2014 \u00a9 OpenStreetMap contributors",
+      "resolution_note": "OSM point/way locations; operational data NOT in OSM.",
+      "datum_note": "",
+      "coverage_km": 3.0,
+      "confidence": "low",
+      "note": "Flood-control structures (dams/weirs/gates) \u2014 none found within 3.0 km.",
+      "sample": []
+    },
+    {
+      "category": "gauge_observations",
+      "status": "unavailable",
+      "count": 0,
+      "source": "OpenStreetMap",
+      "dataset": "osm-overpass",
+      "retrieved_at": "2026-09-01T18:38:04.201005+00:00",
+      "license": "ODbL 1.0 \u2014 \u00a9 OpenStreetMap contributors",
+      "resolution_note": "Gauge stage/discharge from CWC / India-WRIS / BBMB \u2014 not available via OSM. Requires external reconciliation (datum vs EGM2008).",
+      "datum_note": "",
+      "coverage_km": 3.0,
+      "confidence": "low",
+      "note": "CWC/India-WRIS/BBMB gauge data not yet ingested; recorded as unavailable pending external data step.",
+      "sample": []
+    },
+    {
+      "category": "documented_flood_extents",
+      "status": "unavailable",
+      "count": 0,
+      "source": "OpenStreetMap",
+      "dataset": "osm-overpass",
+      "retrieved_at": "2026-09-01T18:38:04.201018+00:00",
+      "license": "ODbL 1.0 \u2014 \u00a9 OpenStreetMap contributors",
+      "resolution_note": "Historical flood extents event-based (build validation dataset later); not available via OSM.",
+      "datum_note": "",
+      "coverage_km": 3.0,
+      "confidence": "low",
+      "note": "No documented flood extents ingested yet.",
+      "sample": []
+    },
+    {
+      "category": "local_survey",
+      "status": "unavailable",
+      "count": 0,
+      "source": "OpenStreetMap",
+      "dataset": "osm-overpass",
+      "retrieved_at": "2026-09-01T18:38:04.201029+00:00",
+      "license": "ODbL 1.0 \u2014 \u00a9 OpenStreetMap contributors",
+      "resolution_note": "Requires surveyed ground points / <30 m elevation (drone/LiDAR/survey) \u2014 not in OSM.",
+      "datum_note": "",
+      "coverage_km": 3.0,
+      "confidence": "low",
+      "note": "local survey not yet obtained; required for plot-level credibility.",
+      "sample": []
+    },
+    {
+      "category": "high_res_dem",
+      "status": "unavailable",
+      "count": 0,
+      "source": "OpenStreetMap",
+      "dataset": "osm-overpass",
+      "retrieved_at": "2026-09-01T18:38:04.201039+00:00",
+      "license": "ODbL 1.0 \u2014 \u00a9 OpenStreetMap contributors",
+      "resolution_note": "Requires surveyed ground points / <30 m elevation (drone/LiDAR/survey) \u2014 not in OSM.",
+      "datum_note": "",
+      "coverage_km": 3.0,
+      "confidence": "low",
+      "note": "high-res DEM not yet obtained; required for plot-level credibility.",
+      "sample": []
+    }
+  ],
+  "contract": {
+    "plot": [
+      31.05,
+      76.53
+    ],
+    "plot_level_credible": false,
+    "weakest_status": "missing",
+    "missing_plot_level_evidence": [
+      "local_survey",
+      "high_res_dem"
+    ],
+    "rows": [
+      {
+        "category": "channel_centerline",
+        "status": "available",
+        "source": "OpenStreetMap",
+        "reference": "osm-overpass",
+        "note": "CONFLICTING evidence for Sutlej centreline: Found 5 river ways within 3.0 km; reconcile which is the Sutlej main stem.",
+        "confidence": "low"
+      },
+      {
+        "category": "channels_drains",
+        "status": "available",
+        "source": "OpenStreetMap",
+        "reference": "osm-overpass",
+        "note": "obtained (1 found); Local channels/drains/streams \u2014 found 1.",
+        "confidence": "medium"
+      },
+      {
+        "category": "embankments_road_rail",
+        "status": "available",
+        "source": "OpenStreetMap",
+        "reference": "osm-overpass",
+        "note": "obtained (2 found); Roads/railways/embankments (potential barriers) \u2014 found 2.",
+        "confidence": "medium"
+      },
+      {
+        "category": "bridges_culverts",
+        "status": "available",
+        "source": "OpenStreetMap",
+        "reference": "osm-overpass",
+        "note": "obtained (2 found); Bridges/culverts/tunnels \u2014 found 2.",
+        "confidence": "medium"
+      },
+      {
+        "category": "flood_control",
+        "status": "missing",
+        "source": "OpenStreetMap",
+        "reference": "osm-overpass",
+        "note": "unavailable (0 found); Flood-control structures (dams/weirs/gates) \u2014 none found within 3.0 km.",
+        "confidence": "low"
+      },
+      {
+        "category": "gauge_observations",
+        "status": "missing",
+        "source": "OpenStreetMap",
+        "reference": "osm-overpass",
+        "note": "unavailable (0 found); CWC/India-WRIS/BBMB gauge data not yet ingested; recorded as unavailable pending external data step.",
+        "confidence": "low"
+      },
+      {
+        "category": "documented_flood_extents",
+        "status": "missing",
+        "source": "OpenStreetMap",
+        "reference": "osm-overpass",
+        "note": "unavailable (0 found); No documented flood extents ingested yet.",
+        "confidence": "low"
+      },
+      {
+        "category": "local_survey",
+        "status": "missing",
+        "source": "OpenStreetMap",
+        "reference": "osm-overpass",
+        "note": "unavailable (0 found); local survey not yet obtained; required for plot-level credibility.",
+        "confidence": "low"
+      },
+      {
+        "category": "high_res_dem",
+        "status": "missing",
+        "source": "OpenStreetMap",
+        "reference": "osm-overpass",
+        "note": "unavailable (0 found); high-res DEM not yet obtained; required for plot-level credibility.",
+        "confidence": "low"
+      }
+    ]
+  },
+  "reconciliation": {
+    "plot_level_credible": false,
+    "missing_plot_level_evidence": [
+      "local_survey",
+      "high_res_dem"
+    ],
+    "connectivity": {
+      "status": "unresolved",
+      "reason": "Hydraulic connectivity unresolved at 30 m DEM resolution.",
+      "checks": [
+        {
+          "check": "channel_centerline_present",
+          "passed": true,
+          "description": "Sutlej centreline available and anchored",
+          "detail": {
+            "category": "channel_centerline",
+            "status": "available",
+            "source": "OpenStreetMap",
+            "reference": "osm-overpass",
+            "note": "CONFLICTING evidence for Sutlej centreline: Found 5 river ways within 3.0 km; reconcile which is the Sutlej main stem.",
+            "confidence": "low"
+          }
+        },
+        {
+          "check": "documented_local_drainage",
+          "passed": true,
+          "description": "A documented channel/drain/survey link from channel to plot",
+          "detail": {
+            "channels_drains": {
+              "category": "channels_drains",
+              "status": "available",
+              "source": "OpenStreetMap",
+              "reference": "osm-overpass",
+              "note": "obtained (1 found); Local channels/drains/streams \u2014 found 1.",
+              "confidence": "medium"
+            },
+            "local_survey": {
+              "category": "local_survey",
+              "status": "missing",
+              "source": "OpenStreetMap",
+              "reference": "osm-overpass",
+              "note": "unavailable (0 found); local survey not yet obtained; required for plot-level credibility.",
+              "confidence": "low"
+            }
+          }
+        },
+        {
+          "check": "terrain_reach_resolvable",
+          "passed": false,
+          "description": "DEM gradient can resolve a drainage path at the plot (not flat)",
+          "detail": null
+        },
+        {
+          "check": "definitive_barrier",
+          "passed": false,
+          "description": "Survey-confirmed embankment with no hydraulic opening separates plot",
+          "detail": {
+            "category": "embankments_road_rail",
+            "status": "available",
+            "source": "OpenStreetMap",
+            "reference": "osm-overpass",
+            "note": "obtained (2 found); Roads/railways/embankments (potential barriers) \u2014 found 2.",
+            "confidence": "medium"
+          }
+        }
+      ]
+    }
+  }
+}

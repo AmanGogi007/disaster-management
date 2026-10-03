@@ -1,0 +1,438 @@
+{
+  "phase": "V0.3 Phase 1e",
+  "fetched_at_utc": "2026-09-01T20:43:59.748253+00:00",
+  "plot": {
+    "lat": 31.05,
+    "lon": 76.53
+  },
+  "radius_km": 3.0,
+  "dem_provenance": {
+    "dataset": "Copernicus DEM GLO-30",
+    "source_resolution_m": 30.92222222222222,
+    "simulation_grid_m": 30.92222222222222,
+    "horizontal_crs": "EPSG:4326",
+    "vertical_datum": "EGM2008",
+    "vertical_offset_m": 0.0,
+    "nodata": null,
+    "bounds_deg": [
+      31.0,
+      76.29972222222223,
+      31.470000000000002,
+      76.68027777777779
+    ],
+    "provenance": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N31_00_E076_00_DEM/Copernicus_DSM_COG_10_N31_00_E076_00_DEM.tif"
+  },
+  "terrain": {
+    "plot": [
+      31.05,
+      76.53
+    ],
+    "radius_km": 3.0,
+    "fetched_at": "2026-09-01T20:43:59.748253+00:00",
+    "dem_provenance": {
+      "dataset": "Copernicus DEM GLO-30",
+      "source_resolution_m": 30.92222222222222,
+      "simulation_grid_m": 30.92222222222222,
+      "horizontal_crs": "EPSG:4326",
+      "vertical_datum": "EGM2008",
+      "vertical_offset_m": 0.0,
+      "nodata": null,
+      "bounds_deg": [
+        31.0,
+        76.29972222222223,
+        31.470000000000002,
+        76.68027777777779
+      ],
+      "provenance": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N31_00_E076_00_DEM/Copernicus_DSM_COG_10_N31_00_E076_00_DEM.tif"
+    },
+    "plot_measurement": {
+      "row": 1512,
+      "col": 828,
+      "dem_elevation_m": 267.5,
+      "elevation_kind": "dem",
+      "dem_source": "Copernicus DEM GLO-30",
+      "dem_vertical_datum": "EGM2008",
+      "slope_deg": 0.0,
+      "aspect_deg": null,
+      "aspect_cardinal": null,
+      "note": "DEM-derived (DSM) elevation at the plot cell; NOT a surveyed ground elevation."
+    },
+    "neighborhood": {
+      "status": "obtained",
+      "cell_count": 44688,
+      "min_m": 266.5,
+      "max_m": 391.62,
+      "mean_m": 287.33,
+      "relief_m": 125.12,
+      "coverage_deg": [
+        31.023,
+        76.4985,
+        31.077,
+        76.5615
+      ],
+      "note": "DEM-derived (DSM) statistics over the radius window; characterisation only."
+    },
+    "plot_boundary": {
+      "status": "unavailable",
+      "geometry": "point only",
+      "note": "No surveyed/parcel plot boundary is available. 'The plot' is the coordinate (lat, lon) used throughout; boundary-dependent conclusions (e.g. which DEM cells fall inside the plot) are NOT asserted."
+    },
+    "samples": [
+      {
+        "label": "channel (main stem):919730633",
+        "feature_type": "channel",
+        "osm_id": "919730633",
+        "name": "Sutlej",
+        "min_distance_km": 0.129,
+        "dem_min_m": 267.0,
+        "dem_mean_m": 267.3,
+        "dem_max_m": 267.5,
+        "relative_to_plot_m": -0.2,
+        "elevation_kind": "dem",
+        "n_points": 10,
+        "datum_note": "DEM-derived (DSM) at 1 arc-second; vertical datum per DEM provenance; no surveyed elevation.",
+        "note": "OSM feature (channel; tag: river). DEM mean across mapped points. Characterisation only \u2014 no connectivity or depth inference."
+      },
+      {
+        "label": "channel (main stem):377207447",
+        "feature_type": "channel",
+        "osm_id": "377207447",
+        "name": null,
+        "min_distance_km": 0.301,
+        "dem_min_m": 267.0,
+        "dem_mean_m": 267.72,
+        "dem_max_m": 270.52,
+        "relative_to_plot_m": 0.22,
+        "elevation_kind": "dem",
+        "n_points": 16,
+        "datum_note": "DEM-derived (DSM) at 1 arc-second; vertical datum per DEM provenance; no surveyed elevation.",
+        "note": "OSM feature (channel; tag: river). DEM mean across mapped points. Characterisation only \u2014 no connectivity or depth inference."
+      },
+      {
+        "label": "channel:377207446",
+        "feature_type": "channel",
+        "osm_id": "377207446",
+        "name": null,
+        "min_distance_km": 0.555,
+        "dem_min_m": 267.5,
+        "dem_mean_m": 277.98,
+        "dem_max_m": 284.12,
+        "relative_to_plot_m": 10.48,
+        "elevation_kind": "dem",
+        "n_points": 45,
+        "datum_note": "DEM-derived (DSM) at 1 arc-second; vertical datum per DEM provenance; no surveyed elevation.",
+        "note": "OSM feature (channel; tag: canal). DEM mean across mapped points. Characterisation only \u2014 no connectivity or depth inference."
+      },
+      {
+        "label": "local_canal_drain:377207446",
+        "feature_type": "local_canal_drain",
+        "osm_id": "377207446",
+        "name": null,
+        "min_distance_km": 0.555,
+        "dem_min_m": 267.5,
+        "dem_mean_m": 277.98,
+        "dem_max_m": 284.12,
+        "relative_to_plot_m": 10.48,
+        "elevation_kind": "dem",
+        "n_points": 45,
+        "datum_note": "DEM-derived (DSM) at 1 arc-second; vertical datum per DEM provenance; no surveyed elevation.",
+        "note": "OSM feature (local_canal_drain; tag: canal). DEM mean across mapped points. Characterisation only \u2014 no connectivity or depth inference."
+      },
+      {
+        "label": "channel (main stem):165931479",
+        "feature_type": "channel",
+        "osm_id": "165931479",
+        "name": "Sutlej",
+        "min_distance_km": 1.152,
+        "dem_min_m": 266.0,
+        "dem_mean_m": 266.55,
+        "dem_max_m": 267.0,
+        "relative_to_plot_m": -0.95,
+        "elevation_kind": "dem",
+        "n_points": 20,
+        "datum_note": "DEM-derived (DSM) at 1 arc-second; vertical datum per DEM provenance; no surveyed elevation.",
+        "note": "OSM feature (channel; tag: river). DEM mean across mapped points. Characterisation only \u2014 no connectivity or depth inference."
+      },
+      {
+        "label": "channel (main stem):41539116",
+        "feature_type": "channel",
+        "osm_id": "41539116",
+        "name": "Sutlej",
+        "min_distance_km": 1.237,
+        "dem_min_m": 267.5,
+        "dem_mean_m": 271.88,
+        "dem_max_m": 275.5,
+        "relative_to_plot_m": 4.38,
+        "elevation_kind": "dem",
+        "n_points": 58,
+        "datum_note": "DEM-derived (DSM) at 1 arc-second; vertical datum per DEM provenance; no surveyed elevation.",
+        "note": "OSM feature (channel; tag: river). DEM mean across mapped points. Characterisation only \u2014 no connectivity or depth inference."
+      },
+      {
+        "label": "crossing:254573869",
+        "feature_type": "crossing",
+        "osm_id": "254573869",
+        "name": "MDR55",
+        "min_distance_km": 1.611,
+        "dem_min_m": 272.39,
+        "dem_mean_m": 274.87,
+        "dem_max_m": 277.34,
+        "relative_to_plot_m": 7.37,
+        "elevation_kind": "dem",
+        "n_points": 2,
+        "datum_note": "DEM-derived (DSM) at 1 arc-second; vertical datum per DEM provenance; no surveyed elevation.",
+        "note": "OSM feature (crossing; tag: secondary). DEM mean across mapped points. Characterisation only \u2014 no connectivity or depth inference."
+      },
+      {
+        "label": "crossing:254573867",
+        "feature_type": "crossing",
+        "osm_id": "254573867",
+        "name": "MDR55",
+        "min_distance_km": 2.494,
+        "dem_min_m": 279.41,
+        "dem_mean_m": 280.06,
+        "dem_max_m": 280.71,
+        "relative_to_plot_m": 12.56,
+        "elevation_kind": "dem",
+        "n_points": 2,
+        "datum_note": "DEM-derived (DSM) at 1 arc-second; vertical datum per DEM provenance; no surveyed elevation.",
+        "note": "OSM feature (crossing; tag: secondary). DEM mean across mapped points. Characterisation only \u2014 no connectivity or depth inference."
+      },
+      {
+        "label": "barrier:680091133",
+        "feature_type": "barrier",
+        "osm_id": "680091133",
+        "name": null,
+        "min_distance_km": 2.674,
+        "dem_min_m": 274.89,
+        "dem_mean_m": 277.77,
+        "dem_max_m": 279.28,
+        "relative_to_plot_m": 10.27,
+        "elevation_kind": "dem",
+        "n_points": 13,
+        "datum_note": "DEM-derived (DSM) at 1 arc-second; vertical datum per DEM provenance; no surveyed elevation.",
+        "note": "OSM feature (barrier; tag: rail). DEM mean across mapped points. Characterisation only \u2014 no connectivity or depth inference."
+      },
+      {
+        "label": "channel:248023200",
+        "feature_type": "channel",
+        "osm_id": "248023200",
+        "name": null,
+        "min_distance_km": 2.966,
+        "dem_min_m": 268.0,
+        "dem_mean_m": 272.96,
+        "dem_max_m": 289.89,
+        "relative_to_plot_m": 5.46,
+        "elevation_kind": "dem",
+        "n_points": 60,
+        "datum_note": "DEM-derived (DSM) at 1 arc-second; vertical datum per DEM provenance; no surveyed elevation.",
+        "note": "OSM feature (channel; tag: river). DEM mean across mapped points. Characterisation only \u2014 no connectivity or depth inference."
+      },
+      {
+        "label": "barrier:919730631",
+        "feature_type": "barrier",
+        "osm_id": "919730631",
+        "name": null,
+        "min_distance_km": 3.17,
+        "dem_min_m": 273.5,
+        "dem_mean_m": 279.27,
+        "dem_max_m": 283.22,
+        "relative_to_plot_m": 11.77,
+        "elevation_kind": "dem",
+        "n_points": 39,
+        "datum_note": "DEM-derived (DSM) at 1 arc-second; vertical datum per DEM provenance; no surveyed elevation.",
+        "note": "OSM feature (barrier; tag: rail). DEM mean across mapped points. Characterisation only \u2014 no connectivity or depth inference."
+      }
+    ],
+    "transect": {
+      "target": {
+        "lat": 31.049493,
+        "lon": 76.528784,
+        "distance_km_from_plot": 0.1288
+      },
+      "target_elevation_m": 267.5,
+      "plot_elevation_m": 267.5,
+      "min_elevation_m": 267.5,
+      "max_elevation_m": 267.5,
+      "drop_below_plot_m": 0.0,
+      "channel_relative_to_plot_m": 0.0,
+      "note": "Linear transect plot \u2192 nearest Sutlej main-stem OSM point, DEM sampled at each stop. Pure elevation contrast characterisation; NOT a hydraulic path, no connectivity or depth inference.",
+      "points": [
+        {
+          "lat": 31.05,
+          "lon": 76.53,
+          "distance_km": 0.0,
+          "dem_elevation_m": 267.5
+        },
+        {
+          "lat": 31.049949,
+          "lon": 76.529878,
+          "distance_km": 0.0129,
+          "dem_elevation_m": 267.5
+        },
+        {
+          "lat": 31.049899,
+          "lon": 76.529757,
+          "distance_km": 0.0258,
+          "dem_elevation_m": 267.5
+        },
+        {
+          "lat": 31.049848,
+          "lon": 76.529635,
+          "distance_km": 0.0386,
+          "dem_elevation_m": 267.5
+        },
+        {
+          "lat": 31.049797,
+          "lon": 76.529514,
+          "distance_km": 0.0515,
+          "dem_elevation_m": 267.5
+        },
+        {
+          "lat": 31.049746,
+          "lon": 76.529392,
+          "distance_km": 0.0644,
+          "dem_elevation_m": 267.5
+        },
+        {
+          "lat": 31.049696,
+          "lon": 76.529271,
+          "distance_km": 0.0773,
+          "dem_elevation_m": 267.5
+        },
+        {
+          "lat": 31.049645,
+          "lon": 76.529149,
+          "distance_km": 0.0902,
+          "dem_elevation_m": 267.5
+        },
+        {
+          "lat": 31.049594,
+          "lon": 76.529027,
+          "distance_km": 0.1031,
+          "dem_elevation_m": 267.5
+        },
+        {
+          "lat": 31.049543,
+          "lon": 76.528906,
+          "distance_km": 0.1159,
+          "dem_elevation_m": 267.5
+        },
+        {
+          "lat": 31.049493,
+          "lon": 76.528784,
+          "distance_km": 0.1288,
+          "dem_elevation_m": 267.5
+        }
+      ]
+    },
+    "low_points": [
+      {
+        "lat": 31.070556,
+        "lon": 76.548056,
+        "dem_elevation_m": 266.85,
+        "distance_from_plot_m": 2860.4,
+        "relative_to_plot_m": -0.65,
+        "is_local_min": true,
+        "note": "DEM-derived depression (GLO-30 DSM). Distinguishes a local surface low, NOT a surveyed pond/basin and NOT connectivity."
+      },
+      {
+        "lat": 31.024167,
+        "lon": 76.530278,
+        "dem_elevation_m": 267.69,
+        "distance_from_plot_m": 2872.7,
+        "relative_to_plot_m": 0.19,
+        "is_local_min": true,
+        "note": "DEM-derived depression (GLO-30 DSM). Distinguishes a local surface low, NOT a surveyed pond/basin and NOT connectivity."
+      },
+      {
+        "lat": 31.031667,
+        "lon": 76.5275,
+        "dem_elevation_m": 267.76,
+        "distance_from_plot_m": 2052.4,
+        "relative_to_plot_m": 0.26,
+        "is_local_min": true,
+        "note": "DEM-derived depression (GLO-30 DSM). Distinguishes a local surface low, NOT a surveyed pond/basin and NOT connectivity."
+      },
+      {
+        "lat": 31.033611,
+        "lon": 76.525278,
+        "dem_elevation_m": 267.78,
+        "distance_from_plot_m": 1877.1,
+        "relative_to_plot_m": 0.28,
+        "is_local_min": true,
+        "note": "DEM-derived depression (GLO-30 DSM). Distinguishes a local surface low, NOT a surveyed pond/basin and NOT connectivity."
+      },
+      {
+        "lat": 31.035278,
+        "lon": 76.528333,
+        "dem_elevation_m": 267.81,
+        "distance_from_plot_m": 1644.7,
+        "relative_to_plot_m": 0.31,
+        "is_local_min": true,
+        "note": "DEM-derived depression (GLO-30 DSM). Distinguishes a local surface low, NOT a surveyed pond/basin and NOT connectivity."
+      },
+      {
+        "lat": 31.037222,
+        "lon": 76.526667,
+        "dem_elevation_m": 267.85,
+        "distance_from_plot_m": 1455.9,
+        "relative_to_plot_m": 0.35,
+        "is_local_min": true,
+        "note": "DEM-derived depression (GLO-30 DSM). Distinguishes a local surface low, NOT a surveyed pond/basin and NOT connectivity."
+      },
+      {
+        "lat": 31.034722,
+        "lon": 76.525556,
+        "dem_elevation_m": 267.95,
+        "distance_from_plot_m": 1750.8,
+        "relative_to_plot_m": 0.45,
+        "is_local_min": true,
+        "note": "DEM-derived depression (GLO-30 DSM). Distinguishes a local surface low, NOT a surveyed pond/basin and NOT connectivity."
+      },
+      {
+        "lat": 31.0325,
+        "lon": 76.526944,
+        "dem_elevation_m": 267.98,
+        "distance_from_plot_m": 1967.6,
+        "relative_to_plot_m": 0.48,
+        "is_local_min": true,
+        "note": "DEM-derived depression (GLO-30 DSM). Distinguishes a local surface low, NOT a surveyed pond/basin and NOT connectivity."
+      }
+    ],
+    "surveyed": {
+      "status": "unavailable",
+      "confidence": "low",
+      "note": "No local ground survey acquired. A survey must supply, on a common datum with horizontal control: ground elevation at building plinths, road crown heights, rail/embankment top elevations, canal bed/berm elevations, culvert/bridge invert and soffit elevations, and plot grading. Until then plot-level answers stay NOT credible (J.3)."
+    },
+    "finer_dem": {
+      "status": "obtained",
+      "dataset": "SRTM GL1 (+GMTED2010 fill)",
+      "resolution_m": 38.2,
+      "vertical_datum": "EGM96",
+      "plot_elevation_m": 269.62,
+      "cross_check_delta_m": 2.12,
+      "note": "Acquired 'SRTM GL1 (+GMTED2010 fill)' (resolution 38.2 m, vertical datum EGM96) as a CROSS-CHECK of the primary DEM, NOT a sub-30 m product. Delta vs primary 2.12109375 m \u2014 datums explicitly differ (EGM96 vs primary EGM2008), so the delta is reported, never fused. A sub-30 m DEM (ALOS/TanDEM/CartoSAT/drone) is still required for plot-level credibility (J.3)."
+    },
+    "connectivity_statement": "Plot-level terrain evidence is characterisation only. A lower DEM value, a low point, or terrain proximity to the channel does NOT by itself establish hydraulic connectivity or flood depth at the plot. Connectivity remains gated by assess_connectivity (UNRESOLVED at 30 m DEM resolution); flood depth requires the flood solver, which is NOT run in this phase.",
+    "deferred_flood_extents": {
+      "status": "deferred",
+      "why_not_blocking": "Terrain acquisition is independent of historical flood-extent intersection; terrain is complete without it.",
+      "remaining": [
+        "GFD/DFO v1 (2000\u20132018, 913 events): per-event raster intersection with the Ropar corridor bbox; read duration + JRC-permanent-water bands per event.",
+        "Events AFTER 2018 (e.g. 2019, 2023) are NOT in GFD v1 \u2014 require CWC/NASA/state flood-extent products instead.",
+        "Reconcile any intersected event with the reconciled main stem + BBMB Bhakra release record (upstream boundary) before use as validation data.",
+        "Record each event's spatial/temporal coverage + uncertainty; never convert an extent polygon into a plot depth without the solver phase."
+      ]
+    },
+    "caveats": [
+      "All numeric elevations are DEM-derived (DSM, Copernicus GLO-30 unless stated) and are characterisation only \u2014 none is a surveyed ground elevation, and none is converted into flood depth.",
+      "GLO-30 is a surface model (DSM): vegetation/embankment/roof tops can contribute to the cell value; a 30 m cell cannot resolve microtopography (ditches, bunds, plot grading, culvert inverts).",
+      "Vertical datum is EGM2008 for GLO-30 (EGM96 for the SRTM cross-check); surveyed elevations on a local/orthometric datum would need explicit transformation before any comparison.",
+      "OSM feature geometry is horizontal-only (WGS84; no vertical datum) \u2014 feature elevations here are purely the DEM sampled at the mapped geometry, never OSM tag heights.",
+      "Terrain proximity / a low point does NOT imply hydraulic connectivity or flood depth; see the gate statement.",
+      "No flood solver has been run (this phase is evidence-only).",
+      "Plot-level credibility (J.3) still requires local survey + sub-30 m DEM."
+    ]
+  }
+}

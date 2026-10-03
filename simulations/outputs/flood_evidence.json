@@ -1,0 +1,1063 @@
+{
+  "phase": "V0.3 Phase 1d",
+  "fetched_at_utc": "2026-09-01T20:01:22.497085+00:00",
+  "plot": {
+    "lat": 31.05,
+    "lon": 76.53
+  },
+  "radius_km": 3.0,
+  "gauge_to_plot_statement": "Gauge readings and historical flood extents are calibration/validation evidence only; no reading or extent is converted into a plot flood depth. The hydraulic relationship between the gauge/event, the river hydraulics, the mapped terrain, the barriers and the Ropar plot is a downstream solver problem and remains unassessed.",
+  "portal_probe": {
+    "rwl_cwc": {
+      "reachable": true,
+      "title": "River Water Level (Telemetry - Hourly), Central Water Commission (CWC)",
+      "metadata_modified": "2026-09-01T03:31:19.331213",
+      "resources": [
+        {
+          "name": "River Water Level Telemetry Hourly CWC Subernarekha (1961-1990)",
+          "format": "CSV",
+          "size": 3627,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/7b11c75a-a714-461d-b13e-81cbd50df6b7/download/rwl_tele_hr_cwc_003_1961_1990.csv"
+        },
+        {
+          "name": " River Water Level Telemetry Hourly CWC Subernarekha (1991-2020)",
+          "format": "CSV",
+          "size": 30080205,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/c7423011-dac6-4e63-8ffe-965a24ae9ddf/download/rwl_tele_hr_cwc_003_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC Subernarekha (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 71737418,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/578e35aa-7044-4a53-a941-8b5b13906372/download/rwl_tel_hr_cwc_003_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Brahmani and Baitarni (1961-1990)",
+          "format": "CSV",
+          "size": 2226,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/6c0eb56d-08f4-478b-83a1-3e331db67afa/download/rwl_tele_hr_cwc_004_1961_1990.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Brahmani and Baitarni (1991-2020)",
+          "format": "CSV",
+          "size": 32120124,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/6f9609e7-516e-4372-af8e-365fb3df419c/download/rwl_tele_hr_cwc_004_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC Brahmani and Baitarni (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 65832553,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/0d5e96c1-aeec-4382-ab3b-53ee997b84ac/download/rwl_tel_hr_cwc_004_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Mahanadi (1961-1990)",
+          "format": "CSV",
+          "size": 16168,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/38be6d8d-08c1-4649-aee4-e8e65977abd8/download/rwl_tele_hr_cwc_005_1961_1990.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Mahanadi (1991-2020)",
+          "format": "CSV",
+          "size": 39682787,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/b20197ea-f9d8-4791-974f-1b18fd0a6a68/download/rwl_tele_hr_cwc_005_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC Mahanadi (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 148640758,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/c8e91c3f-9841-4e47-b0d8-5ec1bd32fab7/download/rwl_tel_hr_cwc_005_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Godavari (1961-1990)",
+          "format": "CSV",
+          "size": 16409,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/1d372fe1-c350-45b3-9c69-b5f8c36a1cd3/download/rwl_tele_hr_cwc_006_1961_1990.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Godavari (1991-2020)",
+          "format": "CSV",
+          "size": 79926803,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/fe5618ae-c607-45d5-ab21-4a32886bd67c/download/rwl_tele_hr_cwc_006_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC Godavari (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 185715692,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/4d139325-8371-422f-acef-d34ccec4300e/download/rwl_tel_hr_cwc_006_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Krishna (1961-1990)",
+          "format": "CSV",
+          "size": 6163,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/007422c0-2d85-4ed2-80f8-42a98056c973/download/rwl_tele_hr_cwc_007_1961_1990.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Krishna (1991-2020)",
+          "format": "CSV",
+          "size": 69995829,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/9579b739-ccb3-4c5a-b571-e3720cef442d/download/rwl_tele_hr_cwc_007_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC Krishna (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 74000976,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/4ddede56-5e49-4956-bb6f-df3786bf601f/download/rwl_tel_hr_cwc_007_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Pennar (1961-1990)",
+          "format": "CSV",
+          "size": 464,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/7771f21d-f8f1-4e30-b1bd-8a011d74790e/download/rwl_tele_hr_cwc_008_1961_1990.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Pennar (1991-2020)",
+          "format": "CSV",
+          "size": 3613053,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/9a46c30c-743c-4e60-946c-daca5d72da61/download/rwl_tele_hr_cwc_008_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC Pennar (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 5154248,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/90dbb343-ad15-49c9-a088-5d485cd83401/download/rwl_tel_hr_cwc_008_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Cauvery (1961-1990)",
+          "format": "CSV",
+          "size": 2268,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/c8769150-2b36-4f5c-b776-6a0a3fd9958c/download/rwl_tele_hr_cwc_009_1961_1990.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Cauvery (1991-2020)",
+          "format": "CSV",
+          "size": 37540857,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/a052cb29-c910-4178-a373-3447d5a511f5/download/rwl_tele_hr_cwc_009_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC Cauvery (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 103688353,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/b5776a31-0583-4c27-a2d9-ee81e3b3a03a/download/rwl_tel_hr_cwc_009_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Tapi (1961-1990)",
+          "format": "CSV",
+          "size": 565,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/fbed0787-3123-4cee-86db-fbeb279abdc7/download/rwl_tele_hr_cwc_010_1961_1990.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Tapi (1991-2020)",
+          "format": "CSV",
+          "size": 18943297,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/e0938a43-7b35-4db7-b9f1-5ced47b968cc/download/rwl_tele_hr_cwc_010_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC Tapi (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 24004201,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/970148c2-c189-4257-9b77-614989072136/download/rwl_tel_hr_cwc_010_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Narmada (1961-1990)",
+          "format": "CSV",
+          "size": 1047,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/2630278d-345f-4b8b-b96b-47e068688cd2/download/rwl_tele_hr_cwc_011_1961_1990.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Narmada (1991-2020)",
+          "format": "CSV",
+          "size": 40815744,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/45a0c494-1491-4399-aac1-d8ab5b441140/download/rwl_tele_hr_cwc_011_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC Narmada (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 68336152,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/0b01ff69-83de-4274-8233-6e564a6eeb9a/download/rwl_tel_hr_cwc_011_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Mahi (1961-1990)",
+          "format": "CSV",
+          "size": 1296,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/e3fdc825-a083-423a-bfc8-1545402c7630/download/rwl_tele_hr_cwc_012_1961_1990.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Mahi (1991-2020)",
+          "format": "CSV",
+          "size": 26342473,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/ffede82d-429a-4f57-a499-c2607f3a46e6/download/rwl_tele_hr_cwc_012_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC Mahi (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 32221386,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/0e21511e-b765-47e3-989f-425b26f39f44/download/rwl_tel_hr_cwc_012_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Sabarmati (1961-1990)",
+          "format": "CSV",
+          "size": 756,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/b1aa8c67-401b-4164-b8f3-035553808069/download/rwl_tele_hr_cwc_013_1961_1990.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC Sabarmati (1991-2020)",
+          "format": "CSV",
+          "size": 16991441,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/8356981d-d938-4a11-ba50-931518ee911b/download/rwl_tele_hr_cwc_013_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC Sabarmati (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 19579671,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/ef3ff78d-847b-46e7-96c0-e2e06aebdf07/download/rwl_tel_hr_cwc_013_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC West flowing rivers of Kutch and Saurashtra including Luni (1961-1990)",
+          "format": "CSV",
+          "size": 682,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/e0e371b0-c236-485b-ac11-53c3d84f02fa/download/rwl_tele_hr_cwc_014_1961_1990.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC West flowing rivers of Kutch and Saurashtra including Luni (1991-2020)",
+          "format": "CSV",
+          "size": 17196604,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/7ca82685-8d2d-4bbc-b6f9-dc00fc22ae59/download/rwl_tele_hr_cwc_014_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC West flowing rivers of Kutch and Saurashtra including Luni (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 17773373,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/fc66a7a5-6a96-4aa3-b1b5-f49f151427e9/download/rwl_tel_hr_cwc_014_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC West flowing rivers from Tapi to Tadri (1991-2020)",
+          "format": "CSV",
+          "size": 9388358,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/9be09218-567b-46fd-ad57-50e71a82496f/download/rwl_tele_hr_cwc_015_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC West flowing rivers from Tapi to Tadri (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 18517650,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/87d42449-57c2-4ac4-8fbd-b6b4629f6779/download/rwl_tel_hr_cwc_015_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC East flowing rivers between Mahanadi and Pennar (1961-1990)",
+          "format": "CSV",
+          "size": 1477,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/98773769-5ab9-419d-b1e5-ce4996f3b6c8/download/rwl_tele_hr_cwc_26_1961_1990.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC East flowing rivers between Mahanadi and Pennar (1991-2020)",
+          "format": "CSV",
+          "size": 35295678,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/794f7c4d-4397-42f5-86e3-0453360a8fd6/download/rwl_tele_hr_cwc_26_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC East flowing rivers between Mahanadi and Pennar (2021-2025)",
+          "format": "CSV",
+          "size": 55293430,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/5e4562a4-2cb0-492c-810c-a56eed332e0c/download/rwl_tele_hr_cwc_26_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level Telemetry Hourly CWC East flowing rivers between Pennar and Kanyakumari (1961-1990)",
+          "format": "CSV",
+          "size": 1641,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/e4a1d30b-aaba-4da8-9a34-2598cf275f63/download/rwl_tele_hr_cwc_27_1961_1990.csv"
+        },
+        {
+          "name": " River Water Level Telemetry Hourly CWC East flowing rivers between Pennar and Kanyakumari (1991-2020)",
+          "format": "CSV",
+          "size": 11853873,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/fb486bf2-8353-4b8f-b972-701574b576cf/download/rwl_tele_hr_cwc_27_1991_2020.csv"
+        },
+        {
+          "name": "River Water Level CWC East flowing rivers between Pennar and Kanyakumari (2021 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 76367656,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/3ef6b8ce-40fb-47e1-92d4-9342859f0593/download/rwl_tel_hr_cwc_27_2021_2025.csv"
+        },
+        {
+          "name": "River Water Level CWC Subernarekha (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 5529757,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/1e23cbb8-c1ce-4434-a635-8231535305f3/download/rwl_tel_hr_cwc_003_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC Mahanadi (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 6245179,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/0ab89c38-558f-47b5-818e-eda9f17cffc4/download/rwl_tel_hr_cwc_005_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC Godavari (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 1977505,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/c6f31452-b416-4599-a6ae-07ad4217cdf4/download/rwl_tel_hr_cwc_006_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC Krishna (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 2583800,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/d80798b9-4b11-4626-8b63-964202ba7216/download/rwl_tel_hr_cwc_007_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC Pennar (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 291,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/2ef9e34a-4a1b-4fe9-a542-9f7623289f47/download/rwl_tel_hr_cwc_008_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC Cauvery (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 3760119,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/d027c5ac-379d-4ac2-8ced-97b02b6edbc0/download/rwl_tel_hr_cwc_009_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC Tapi (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 393676,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/6c99c7f3-f8f2-4381-98aa-611d27921fde/download/rwl_tel_hr_cwc_010_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC Narmada (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 2464857,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/a2e056f6-ed8a-45bf-9142-01dc1904405a/download/rwl_tel_hr_cwc_011_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC Mahi (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 1600327,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/0b7cab7a-9ab7-4343-9316-fdbf17dde48b/download/rwl_tel_hr_cwc_012_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC Sabarmati (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 940,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/7d180b02-f572-4d75-b8bd-18667e7c52ec/download/rwl_tel_hr_cwc_013_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC West flowing rivers of Kutch and Saurashtra including Luni (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 302966,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/6c357b24-d7cb-4725-afaa-36b0a08f5f06/download/rwl_tel_hr_cwc_014_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC West flowing rivers from Tapi to Tadri (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 400774,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/88d6f0d7-52a9-46cd-a030-a7b39076083e/download/rwl_tel_hr_cwc_015_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC East flowing rivers between Pennar and Kanyakumari (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 5046723,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/dc45c606-eaed-4e9e-a4f0-84152ff13e10/download/rwl_tel_hr_cwc_27_2026_2030.csv"
+        },
+        {
+          "name": "River Water Level CWC Brahmani and Baitarni (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 4339790,
+          "url": "https://nwdp.nwic.gov.in/dataset/68600163-c5a0-4327-aa1a-fa7157b86cce/resource/178082a5-2a2b-445e-b059-97337f325cd7/download/rwl_tel_hr_cwc_004_2026_2030.csv"
+        }
+      ]
+    },
+    "discharge_cwc": {
+      "reachable": true,
+      "title": "River Discharge (Manual - Daily), Central Water Commission (CWC)",
+      "metadata_modified": "2026-09-01T02:37:56.037972",
+      "resources": [
+        {
+          "name": "River Discharge Central Water Commission (CWC), Andhra Pradesh (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 20241719,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/7a62a060-769a-4a96-afb4-329b4c78951a/download/riverdischarge_manual_daily_cwc_ap_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Andhra Pradesh (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 27831388,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/7f8eaf8a-a763-4456-a64d-350e55997ad9/download/river_discharge_manual_daily_cwc_ap_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), Chhattisgarh (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 26158701,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/33129841-43dc-4b1f-9e03-47e236f3e96f/download/riverdischarge_manual_daily_cwc_cg_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Chhattisgarh (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 30514242,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/325ace25-9216-4701-95c5-b2027c5fb66c/download/river_discharge_manual_daily_cwc_cg_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge CWC Daman & Diu (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 58515,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/334a223a-24d8-436b-867e-213396e9644e/download/river_discharge_manual_daily_cwc_dd_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge CWC Goa (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 647714,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/27063a04-1f75-4447-a741-e189a48e1925/download/river_discharge_manual_daily_cwc_ga_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), Gujarat (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 9304552,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/3a86b991-7dd5-40db-bef1-ae5f6f35a211/download/riverdischarge_manual_daily_cwc_gj_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Gujarat (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 14487567,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/b076861e-1513-410e-bafa-a1e34cd8f493/download/river_discharge_manual_daily_cwc_gj_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), Jharkhand (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 6952199,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/d8fa8ea5-237b-4c8c-9fe8-557e46aea75a/download/riverdischarge_manual_daily_cwc_jh_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Jharkhand (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 7028191,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/29fddd3b-2ff0-4bcb-99aa-9234aa6778aa/download/river_discharge_manual_daily_cwc_jh_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), Karnataka (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 34792413,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/e75d9aec-196b-4f68-8abe-255a5cd6376e/download/riverdischarge_manual_daily_cwc_ka_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Karnataka (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 45415268,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/f95150ea-c8fc-4740-8815-d9c34c9d53a3/download/river_discharge_manual_daily_cwc_ka_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), Kerala (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 23703774,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/7132d8ae-3174-408d-8ef3-37aa00752787/download/riverdischarge_manual_daily_cwc_kl_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Kerala (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 39425558,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/c3cbe74d-2442-4496-aab2-21e8b5faa12e/download/river_discharge_manual_daily_cwc_kl_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), Maharashtra (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 49607196,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/1d7caf25-c30b-481e-8c10-bf8355ac3f98/download/riverdischarge_manual_daily_cwc_mh_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Maharashtra (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 49160379,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/9c659865-ab21-4ffa-a3f9-edbae14f5c86/download/river_discharge_manual_daily_cwc_mh_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge CWC Meghalaya (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 401093,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/0271ab76-01bc-4798-bf4e-45567b5e3f9b/download/river_discharge_manual_daily_cwc_ml_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), Madhya Pradesh (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 23403452,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/35648095-54a2-4a87-9fc3-1e437cf9179b/download/riverdischarge_manual_daily_cwc_mp_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Madhya Pradesh (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 46191239,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/5708264d-5aea-4e39-8e64-e837f55d4c1b/download/river_discharge_manual_daily_cwc_mp_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge CWC Mizoram (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 7477825,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/4126e89b-3a47-48c4-9783-65f00a4894ad/download/river_discharge_manual_daily_cwc_mz_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), Odisha (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 17194045,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/7a2eb488-8a47-4483-b593-a15843dafe9a/download/riverdischarge_manual_daily_cwc_od_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Odisha (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 30794707,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/1286575d-3616-499a-a9db-45ed33f103e8/download/river_discharge_manual_daily_cwc_od_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), Puducherry (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 92824,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/9dc9cc48-7dbd-4a7e-9292-d1b182eab123/download/riverdischarge_manual_daily_cwc_py_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Puducherry (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 2687217,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/93e4a9c4-7871-49ef-bbdc-6391c2271403/download/river_discharge_manual_daily_cwc_py_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), Rajasthan (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 765623,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/1f983f59-c157-4b89-af17-7d63bccd4a47/download/riverdischarge_manual_daily_cwc_rj_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Rajasthan (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 3796161,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/e62882fe-1b5e-4d17-8bec-62d537ea2a28/download/river_discharge_manual_daily_cwc_rj_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), Tamil Nadu (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 29388515,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/cba07162-d1da-4987-b52e-0c1e2173e287/download/riverdischarge_manual_daily_cwc_tn_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Tamil Nadu (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 51311701,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/fca9df0b-47b1-4f1a-8e59-1b43a8c0ae73/download/river_discharge_manual_daily_cwc_tn_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge CWC Tripura (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 115448,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/c3bcd659-a544-4902-98b5-dd6248abf630/download/river_discharge_manual_daily_cwc_tr_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), Telangana (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 14079338,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/e206b2fd-24b6-490f-90e5-e19eb87c259e/download/riverdischarge_manual_daily_cwc_ts_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC Telangana (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 16561361,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/1b9088b5-d196-4c5d-8780-a888e7e9e86b/download/river_discharge_manual_daily_cwc_ts_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge Central Water Commission (CWC), West Bengal (1950 - 2000) Manual Daily",
+          "format": "CSV",
+          "size": 246076,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/3e38c530-39f1-4804-bba4-ccab7b70b36e/download/riverdischarge_manual_daily_cwc_wb_1950_2000.csv"
+        },
+        {
+          "name": "River Discharge CWC West Bengal (2001 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 1095524,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/f414a75a-f71d-4522-9600-ed9c952fbacd/download/river_discharge_manual_daily_cwc_wb_2001_2025.csv"
+        },
+        {
+          "name": "River Discharge CWC Andhra Pradesh (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 811833,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/7a94f96b-7df5-4285-839d-c2dc8ba08241/download/river_discharge_manual_daily_cwc_ap_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Chhattisgarh (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 894889,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/06a59e6c-8ebc-4dcc-a5de-894d078b5cbb/download/river_discharge_manual_daily_cwc_cg_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Daman & Diu (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 237,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/223410c9-0e24-442f-9aad-bd8c102be68c/download/river_discharge_manual_daily_cwc_dd_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Goa (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 19966,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/f332f256-3dea-407c-8224-d3a43f1a5995/download/river_discharge_manual_daily_cwc_ga_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Gujarat (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 332340,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/0b648633-a893-4baf-9ab7-d42dbd80bb53/download/river_discharge_manual_daily_cwc_gj_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Jharkhand (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 129356,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/b2ddfd83-ab81-4e76-91c3-4499506cc0e4/download/river_discharge_manual_daily_cwc_jh_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Karnataka (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 806610,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/8116803c-3edf-4c53-9840-19446ce857e7/download/river_discharge_manual_daily_cwc_ka_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Kerala (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 834679,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/4c771ce1-6646-4dbc-9984-e40a3d5bd21f/download/river_discharge_manual_daily_cwc_kl_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Maharashtra (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 1298736,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/65e0ff3a-2b79-4e0b-b1ad-c2977cda9d09/download/river_discharge_manual_daily_cwc_mh_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Meghalaya (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 38997,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/ad34e1ed-8961-46ad-984b-65044af7774b/download/river_discharge_manual_daily_cwc_ml_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Madhya Pradesh (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 2045815,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/dbb429ad-6030-46d8-931a-cd3b1c1dedbd/download/river_discharge_manual_daily_cwc_mp_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Mizoram (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 646479,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/737171da-ed31-4afb-91c4-7d5166bc755c/download/river_discharge_manual_daily_cwc_mz_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Odisha (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 935414,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/1e501a44-ff95-42db-81e1-efa2be8be4dd/download/river_discharge_manual_daily_cwc_od_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Puducherry (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 2516,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/aca79e55-da2c-4e4c-bb0b-8249f6089e3d/download/river_discharge_manual_daily_cwc_py_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Rajasthan (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 33155,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/2d434fd7-4d0e-4b71-ab38-9c9716467175/download/river_discharge_manual_daily_cwc_rj_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Tamil Nadu (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 1053619,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/38543447-b022-4061-b246-d9c00d134639/download/river_discharge_manual_daily_cwc_tn_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Tripura (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 25912,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/754fd532-1881-42d1-9b3b-5207e02c9141/download/river_discharge_manual_daily_cwc_tr_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC Telangana (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 504571,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/083774d3-ba42-44c5-977a-2965cb572354/download/river_discharge_manual_daily_cwc_ts_2026_2030.csv"
+        },
+        {
+          "name": "River Discharge CWC West Bengal (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 49532,
+          "url": "https://nwdp.nwic.gov.in/dataset/08fa3fd0-7861-471d-a295-27c1b239d1fa/resource/7dac0aa8-966a-4bd8-b347-2dc85c444931/download/river_discharge_manual_daily_cwc_wb_2026_2030.csv"
+        }
+      ]
+    },
+    "res_manual_bbmb": {
+      "reachable": true,
+      "title": "Reservoir  Water Level (Manual - Daily) Bhakra Beas Management Board, Chandigarh",
+      "metadata_modified": "2026-09-01T00:08:27.412972",
+      "resources": [
+        {
+          "name": "Reservior  Water Level Bhakra_Beas_Management_Board_Chandigarh Himachal Pradesh (1970 - 2025) Manual Daily",
+          "format": "CSV",
+          "size": 4978,
+          "url": "https://nwdp.nwic.gov.in/dataset/16c555d2-834f-4217-8414-e3866d373914/resource/9a1afe1d-d469-47b0-b3ab-1833e2eb5dd3/download/reservior_water_level_manual_daily_bhakra_beas_management_board_chandigarh_hp_1970_2025.csv"
+        },
+        {
+          "name": "Reservior  Water Level Bhakra_Beas_Management_Board_Chandigarh Himachal Pradesh (2026 - 2030) Manual Daily",
+          "format": "CSV",
+          "size": 232,
+          "url": "https://nwdp.nwic.gov.in/dataset/16c555d2-834f-4217-8414-e3866d373914/resource/157b70f6-f2c3-4594-ad9f-e8550c75f6f8/download/reservior_water_level_manual_daily_bhakra_beas_management_board_chandigarh_hp_2026_2030.csv"
+        }
+      ]
+    },
+    "res_tele_bbmb": {
+      "reachable": true,
+      "title": "Reservoir  Water Level (Telemetry - Hourly) Bhakra Beas Management Board, Chandigarh",
+      "metadata_modified": "2026-09-01T00:09:31.553962",
+      "resources": [
+        {
+          "name": "Reservior  Water Level Bhakra_Beas_Management_Board_Chandigarh Himachal Pradesh (1970 - 2025) Telemetry Hourly",
+          "format": "CSV",
+          "size": 12387675,
+          "url": "https://nwdp.nwic.gov.in/dataset/fa53c4a6-c655-4b01-b53c-0fc0580b7919/resource/f05f900a-7ddd-4ef8-a092-8f2708203afe/download/reservior_water_level_tel_hr_bhakra_beas_management_board_chandigarh_hp_1970_2025.csv"
+        },
+        {
+          "name": "Reservior  Water Level Bhakra_Beas_Management_Board_Chandigarh Himachal Pradesh (2026 - 2030) Telemetry Hourly",
+          "format": "CSV",
+          "size": 353390,
+          "url": "https://nwdp.nwic.gov.in/dataset/fa53c4a6-c655-4b01-b53c-0fc0580b7919/resource/4550ae70-c7f3-4e7c-a8b6-b1aecf8c0063/download/reservior_water_level_tel_hr_bhakra_beas_management_board_chandigarh_hp_2026_2030.csv"
+        }
+      ]
+    }
+  },
+  "records": [
+    {
+      "title": "CWC river water level (telemetry, hourly) \u2014 national NWDP dataset",
+      "kind": "gauge_series",
+      "status": "obtained",
+      "source_org": "CWC / NWDP",
+      "dataset": "River Water Level (Telemetry - Hourly), Central Water Commission (CWC)",
+      "source_url": "https://nwdp.nwic.gov.in/dataset/river-water-level-telemetry-hourly-central-water-commission-cwc",
+      "retrieved_at": "2026-09-01T20:01:22.497085+00:00",
+      "license": "National Water Data Portal (open government data)",
+      "spatial_coverage": "All-india dataset; resource-level basin coverage (peninsular only)",
+      "temporal_coverage": "1961\u20132025 per resource (hourly)",
+      "units": "m (water level)",
+      "datum_note": "Per-station gauge zero vs MSL must hold per resource headers",
+      "resolution_note": "Hourly telemetry; station-level records",
+      "uncertainty_note": "Dataset reachable via NWDP CKAN API. The package covers ONLY peninsular river basins (Subernarekha, Brahmani, Mahanadi, Godavari, Krishna, Pennar, Cauvery, Tapi, Narmada, Mahi, Sabarmati, west/east-flowing groups) \u2014 it contains NO Indus/Sutlej-basin resource. Verified 2026-09-02 from the package resource list.",
+      "confidence": "medium",
+      "count": 58,
+      "sample": [],
+      "note": "Dataset reachable via NWDP CKAN API. The package covers ONLY peninsular river basins (Subernarekha, Brahmani, Mahanadi, Godavari, Krishna, Pennar, Cauvery, Tapi, Narmada, Mahi, Sabarmati, west/east-flowing groups) \u2014 it contains NO Indus/Sutlej-basin resource. Verified 2026-09-02 from the package resource list."
+    },
+    {
+      "title": "CWC gauge series for the Sutlej / Ropar reach",
+      "kind": "gauge_series",
+      "status": "unavailable",
+      "source_org": "CWC / NWDP",
+      "dataset": "Sutlej-basin level series (none published in NWDP RWL package)",
+      "source_url": "https://sandrp.in/2019/09/25/overview-of-cwc-flood-forecasting-sites-2019-north-india/",
+      "retrieved_at": "2026-09-01T20:01:22.497085+00:00",
+      "license": "",
+      "spatial_coverage": "Sutlej reach near Ropar (31.05N, 76.53E, r=3 km)",
+      "temporal_coverage": "n/a",
+      "units": "n/a",
+      "datum_note": "n/a",
+      "resolution_note": "n/a",
+      "uncertainty_note": "CWC flood-forecasting network has NO site in Punjab: the single site added in 2019 is inactive, and no level-forecast station exists in the Sutlej basin (only monitoring stations in Himachal Pradesh, far upstream: Rampur, Pandoa, Titang...). The NWDP RWL telemetry package lists no Indus/Sutlej resource. Both verified on 2026-09-02.",
+      "confidence": "low",
+      "count": 0,
+      "sample": [],
+      "note": "Authoritative absence with stated reasons \u2014 NOT a silent gap. The Ropar reach has no CWC telemetry level series in the machine-readable portal."
+    },
+    {
+      "title": "CWC river discharge (manual, daily) \u2014 national NWDP dataset",
+      "kind": "gauge_series",
+      "status": "obtained",
+      "source_org": "CWC / NWDP",
+      "dataset": "River Discharge (Manual - Daily), Central Water Commission (CWC)",
+      "source_url": "https://nwdp.nwic.gov.in/dataset/river-discharge-manual-dailly-central-water-commission-cwc",
+      "retrieved_at": "2026-09-01T20:01:22.497085+00:00",
+      "license": "National Water Data Portal (open government data)",
+      "spatial_coverage": "All-india dataset; state-grouped resources (no Indus-system states)",
+      "temporal_coverage": "1950\u20132025 per resource (daily)",
+      "units": "m\u00b3/s (discharge)",
+      "datum_note": "n/a",
+      "resolution_note": "Daily manual observations; station-level records",
+      "uncertainty_note": "Dataset reachable via NWDP CKAN API. The package is state-grouped and contains NO Punjab / Himachal J&K resource (no Indus-system state). Verified 2026-09-02 from the package resource list.",
+      "confidence": "medium",
+      "count": 52,
+      "sample": [],
+      "note": "Dataset reachable via NWDP CKAN API. The package is state-grouped and contains NO Punjab / Himachal J&K resource (no Indus-system state). Verified 2026-09-02 from the package resource list."
+    },
+    {
+      "title": "BBMB Bhakra reservoir level \u2014 NWDP manual-daily resource",
+      "kind": "reservoir_level",
+      "status": "insufficient",
+      "source_org": "BBMB / NWDP",
+      "dataset": "Reservoir Water Level (Manual - Daily) BBMB (1970\u20132025)",
+      "source_url": "https://nwdp.nwic.gov.in/dataset/reservoir-water-level-manual-daily-bhakra-beas-management-board-chandigarh",
+      "retrieved_at": "2026-09-01T20:01:22.497085+00:00",
+      "license": "National Water Data Portal (open government data)",
+      "spatial_coverage": "Bhakra Dam, Bilaspur HP (31.4156N, 76.4347E) ~45 km upstream of plot",
+      "temporal_coverage": "1970\u20132025 (daily)",
+      "units": "m (per CSV header)",
+      "datum_note": "Levels in metres in CSV; BBMB bulletin publishes feet (FRL 1680 ft \u2248 512.06 m)",
+      "resolution_note": "Daily reservoir level",
+      "uncertainty_note": "Resource 'Reservoir Water Level ... (1970 - 2025) Manual Daily' contains a row for station 'Bhakra Dam RL1700_BBMB' (Satluj, Indus, 31.4156N, 76.4347E) BUT the published values are placeholder-quality (sequence 1,2,3,4,5 m and -999 fillers) \u2014 recorded insufficient, NOT credible as observations. Verified 2026-09-02 by direct download + inspection.",
+      "confidence": "low",
+      "count": 1,
+      "sample": [
+        {
+          "station": "Bhakra Dam RL1700_BBMB",
+          "lat": 31.41555556,
+          "lon": 76.43472222,
+          "value_m": 1.0,
+          "quality": "placeholder \u2014 not credible"
+        }
+      ],
+      "note": "Resource 'Reservoir Water Level ... (1970 - 2025) Manual Daily' contains a row for station 'Bhakra Dam RL1700_BBMB' (Satluj, Indus, 31.4156N, 76.4347E) BUT the published values are placeholder-quality (sequence 1,2,3,4,5 m and -999 fillers) \u2014 recorded insufficient, NOT credible as observations. Verified 2026-09-02 by direct download + inspection."
+    },
+    {
+      "title": "BBMB reservoir level \u2014 NWDP telemetry-hourly resources",
+      "kind": "reservoir_level",
+      "status": "insufficient",
+      "source_org": "BBMB / NWDP",
+      "dataset": "Reservoir Water Level (Telemetry - Hourly) BBMB",
+      "source_url": "https://nwdp.nwic.gov.in/dataset/reservoir-water-level-telemetry-hourly-bhakra-beas-management-board-chandigarh",
+      "retrieved_at": "2026-09-01T20:01:22.497085+00:00",
+      "license": "National Water Data Portal (open government data)",
+      "spatial_coverage": "BBMB reservoirs/powerhouses (Bhakra, Pong, Baspa, Karcham Wangtu)",
+      "temporal_coverage": "1970\u20132030 (hourly)",
+      "units": "m (per CSV header)",
+      "datum_note": "Levels in metres in CSV; BBMB bulletin publishes feet (FRL 1680 ft \u2248 512.06 m)",
+      "resolution_note": "Hourly reservoir level",
+      "uncertainty_note": "The hourly BBMB telemetry resources (1970\u20132030) exist; the 2026\u20132030 resource inspected 2026-09-02 contains only station rows for 'Baspa PH' and 'Karcham Wangtu PH' (Satluj catchment powerhouses) \u2014 NO Bhakra reservoir rows in that file. Bhakra telemetry may reside in the 1970\u20132025 file (not inspected, 12 MB) \u2014 recorded uncertain, not assumed.",
+      "confidence": "low",
+      "count": 2,
+      "sample": [
+        {
+          "station": "Baspa PH_BBMB",
+          "river": "Beas",
+          "level_m": 2530.981,
+          "note": "upstream powerhouse, not Bhakra"
+        }
+      ],
+      "note": "The hourly BBMB telemetry resources (1970\u20132030) exist; the 2026\u20132030 resource inspected 2026-09-02 contains only station rows for 'Baspa PH' and 'Karcham Wangtu PH' (Satluj catchment powerhouses) \u2014 NO Bhakra reservoir rows in that file. Bhakra telemetry may reside in the 1970\u20132025 file (not inspected, 12 MB) \u2014 recorded uncertain, not assumed."
+    },
+    {
+      "title": "BBMB Bhakra reservoir bulletin \u2014 daily live value",
+      "kind": "reservoir_level",
+      "status": "unavailable",
+      "source_org": "BBMB",
+      "dataset": "Reservoir Data bulletin (daily reservoir level / inflow / outflow)",
+      "source_url": "https://bbmb.gov.in/data-reservoir.htm",
+      "retrieved_at": "2026-09-01T20:01:22.497085+00:00",
+      "license": "BBMB public bulletin (\u00a9 BBMB)",
+      "spatial_coverage": "Bhakra Dam (31.4156N, 76.4347E) ~45 km upstream of plot",
+      "temporal_coverage": "snapshot (not captured)",
+      "units": "level ft; inflow/outflow cusecs",
+      "datum_note": "BBMB gauge datum in feet; FRL 1680 ft, MWL 1690 ft, top of dam 1700 ft",
+      "resolution_note": "Daily (06:00) bulletin values",
+      "uncertainty_note": "bbmb.gov.in bulletin pages unreachable from the research environment on 2026-09-01 (fetch failure after 2 attempts). This is a FETCH FAILURE, not certified absence; the bulletin is published daily and indexed snapshots exist (see documented records).",
+      "confidence": "low",
+      "count": 0,
+      "sample": [],
+      "note": "Fetch failure recorded honestly; no fabricated level value."
+    },
+    {
+      "title": "Sutlej peak flow at Ropar \u2014 9 Sep 1988 flood (worst on record)",
+      "kind": "peak_flow_record",
+      "status": "obtained",
+      "source_org": "BBMB / Punjab Drainage records (via press)",
+      "dataset": "Historical peak discharge record at Ropar headworks",
+      "source_url": "https://indianexpress.com/article/cities/chandigarh/punjab-first-time-after-1988-floods-sutlej-carrying-more-than-its-capacity/",
+      "retrieved_at": null,
+      "license": "n/a (cited reporting)",
+      "spatial_coverage": "Ropar headworks on the Sutlej (31.05N, 76.53E reach)",
+      "temporal_coverage": "9 Sep 1988 (event)",
+      "units": "cusecs",
+      "datum_note": "Flow (not stage); cusec \u2248 0.02832 m\u00b3/s",
+      "resolution_note": "Single peak value from official/BBMB records as reported",
+      "uncertainty_note": "Reported 4,55,411 cusecs on 9 Sep 1988, described as the worst-ever Sutlej flood in Punjab; sources are press quoting BBMB/Punjab drainage records \u2014 medium confidence, not a primary gauge chart.",
+      "confidence": "medium",
+      "count": 1,
+      "sample": [
+        {
+          "date": "1988-09-09",
+          "peak_cusecs": 455411,
+          "location": "Ropar"
+        }
+      ],
+      "note": "Canonical documented peak for the Ropar reach; used later as a calibration/design event, never as a plot depth."
+    },
+    {
+      "title": "September 1988 flood inundation mapping (Sutlej, upstream of Ropar)",
+      "kind": "flood_extent",
+      "status": "obtained",
+      "source_org": "National Institute of Hydrology (NIH)",
+      "dataset": "Flood inundation + flood-plain mapping of the 1988 flood, IRS LISS-II",
+      "source_url": "https://www.indiawaterportal.org/climate-change/disasters/flood-studies-satluj-basin-research-report-national-institute-hydrology",
+      "retrieved_at": null,
+      "license": "NIH research report (via India Water Portal)",
+      "spatial_coverage": "~50 km Sutlej reach upstream of Roopnagar (Ropar) + 181 km planform reach downstream",
+      "temporal_coverage": "Sep 1988 event",
+      "units": "satellite-derived inundation classes",
+      "datum_note": "IRS LISS-II (23.5 m) + FCC 1:250,000 rectified mapping",
+      "resolution_note": "Satellite flood-inundation mapping with damage classes",
+      "uncertainty_note": "Mapped with 1980s satellite data (LISS-II); right-flank areas reported more inundated than left; includes Ropar headworks conveyance-capacity assessment. Use as extent/calibration evidence, not plot depth.",
+      "confidence": "medium",
+      "count": 1,
+      "sample": [
+        {
+          "event": "Sep 1988",
+          "mapper": "NIH (IRS LISS-II)",
+          "reach_km_upstream_of_ropar": 50
+        }
+      ],
+      "note": "Documented spatial extent of the design flood for the Ropar reach."
+    },
+    {
+      "title": "Sutlej flood Aug 2019 at Ropar/Phillaur \u2014 village-level inundation",
+      "kind": "flood_extent",
+      "status": "obtained",
+      "source_org": "Punjab govt / Punjab Drainage Dept (via press + surveys)",
+      "dataset": "District/village-level inundation + crop-damage survey (2019)",
+      "source_url": "https://indianexpress.com/article/india/initial-crop-damage-survey-over-one-lakh-acres-submerged-crops-in-13-districts-hit-5926796/",
+      "retrieved_at": null,
+      "license": "n/a (cited reporting + govt survey)",
+      "spatial_coverage": "Ropar (~95 villages, ~13,800 acres), Jalandhar, Ferozepur, Kapurthala districts",
+      "temporal_coverage": "17\u201320 Aug 2019 (event)",
+      "units": "villages / acres / cusecs",
+      "datum_note": "Flow at Phillaur; no Ropar-reach stage gauge",
+      "resolution_note": "Village/acre level official survey granularity",
+      "uncertainty_note": "Phillaur peak ~2.65\u20132.75 lakh cusecs (highest since 1988; carrying capacity Ropar\u2013Harike ~2.0 lakh cusecs). Ropar district ~95 villages inundated; ~300 villages across Ropar/Jalandhar/Ferozepur; natural calamity declared; Dhussi bandh breach reported. Press + govt survey reporting, medium confidence.",
+      "confidence": "medium",
+      "count": 95,
+      "sample": [
+        {
+          "year": 2019,
+          "district": "Ropar",
+          "villages_inundated": 95,
+          "acres_damaged": 13800
+        },
+        {
+          "year": 2019,
+          "peak_phillaur_cusecs": 265000
+        }
+      ],
+      "note": "Nearest-to-plot documented inundation event (Ropar district)."
+    },
+    {
+      "title": "Aug 2023 satellite-observed flood water on the Sutlej",
+      "kind": "flood_extent",
+      "status": "obtained",
+      "source_org": "NASA EO / USGS Landsat",
+      "dataset": "Landsat 9 OLI-2 flood imagery of the Sutlej (Aug 2023)",
+      "source_url": "https://landsat.visibleearth.nasa.gov/view.php?id=151754",
+      "retrieved_at": null,
+      "license": "NASA/USGS Landsat \u2014 public domain",
+      "spatial_coverage": "Sutlej downstream of Ropar \u2014 Firozpur reach (India/Pakistan border), NOT the Ropar corridor",
+      "temporal_coverage": "2023-08-19 (with 2023-06-16 pre-flood)",
+      "units": "imagery (water surface)",
+      "datum_note": "Satellite surface-water extent; no stage",
+      "resolution_note": "30 m OLI-2 imagery",
+      "uncertainty_note": "Documents the 2023 Sutlej flood extent ~150 km downstream of the plot. It does NOT establish inundation at the Ropar plot; recorded for the Sutlej flood library only.",
+      "confidence": "high",
+      "count": 1,
+      "sample": [
+        {
+          "acquisition": "2023-08-19",
+          "sensor": "Landsat 9 OLI-2",
+          "reach": "Firozpur (downstream of Ropar)"
+        }
+      ],
+      "note": "Documented extent, correctly NOT extrapolated to the Ropar plot."
+    },
+    {
+      "title": "Global Flood Database v1 (DFO/MODIS)",
+      "kind": "flood_extent",
+      "status": "obtained",
+      "source_org": "DFO / Floodbase / Tellman et al. 2021",
+      "dataset": "Global Flood Database v1 \u2014 913 events, 2000\u20132018, MODIS 250 m",
+      "source_url": "https://global-flood-database.cloudtostreet.info/",
+      "retrieved_at": null,
+      "license": "CC-BY (GFD)",
+      "spatial_coverage": "Global; includes India events (316 recorded by DFO)",
+      "temporal_coverage": "2000-02-17 to 2018-12-10",
+      "units": "flooded/duration/jrc_perm_water bands",
+      "datum_note": "WGS84 raster at 30 arc-sec; hydroSHEDS-based event regions",
+      "resolution_note": "250 m (MODIS) flood extent + duration",
+      "uncertainty_note": "Per-event extraction intersecting the Ropar corridor bbox has NOT been performed at this checkpoint (deferred step). Station/event catalog is reachable (verified 2026-09-02).",
+      "confidence": "medium",
+      "count": 913,
+      "sample": [],
+      "note": "Dataset catalogued; corridor intersection extraction deferred."
+    },
+    {
+      "title": "CWC flood-forecasting network coverage near Ropar",
+      "kind": "network_status",
+      "status": "unavailable",
+      "source_org": "CWC / SANDRP compilations of the CWC FF network",
+      "dataset": "CWC flood-forecasting site network (2018/2019/2025)",
+      "source_url": "https://sandrp.in/2025/07/09/himachal-pradesh-why-cwcs-forecasting-is-unavailable-amidst-flood-disaster/",
+      "retrieved_at": null,
+      "license": "n/a (compilations)",
+      "spatial_coverage": "Punjab (none) / Himachal Sutlej sites (Rampur, Pandoa, Titang, Powari, Nathpa \u2014 monitoring only)",
+      "temporal_coverage": "2018\u20132025 network status",
+      "units": "sites",
+      "datum_note": "n/a",
+      "resolution_note": "Network-level (site presence)",
+      "uncertainty_note": "CWC has no flood-forecasting or level-forecast station in the Sutlej basin; the single Punjab site added in 2019 is inactive; Sutlej monitoring sites are far upstream in Himachal Pradesh (HFLs recorded 2005-08-03 at Rampur/Titang/etc.). No station at Ropar.",
+      "confidence": "high",
+      "count": 0,
+      "sample": [],
+      "note": "Explains WHY no CWC Ropar gauge series is expected: authoritative network coverage statement."
+    },
+    {
+      "title": "India-WRIS hydro-meteorological station registry",
+      "kind": "network_status",
+      "status": "unavailable",
+      "source_org": "India-WRIS (CWC/MoJS + NRSC-ISRO)",
+      "dataset": "CWC Hydro-Meteorological Sites registry (901 HMS)",
+      "source_url": "https://indiawris.gov.in/wiki/doku.php?id=cwc_hydro-meteorological_sites",
+      "retrieved_at": "2026-09-01T20:01:22.497085+00:00",
+      "license": "India-WRIS (government open access)",
+      "spatial_coverage": "India-wide HMS registry",
+      "temporal_coverage": "registry as published",
+      "units": "stations",
+      "datum_note": "n/a",
+      "resolution_note": "Registry-level",
+      "uncertainty_note": "indiawris.gov.in was unreachable from the research environment on 2026-09-01 (fetch failure after 2 attempts) \u2014 recorded as a FETCH FAILURE, not certified absence. Registry documented via India-WRIS/NGI wiki + CWC sources.",
+      "confidence": "low",
+      "count": 0,
+      "sample": [],
+      "note": "Registry endpoint not live-verifiable at this checkpoint."
+    },
+    {
+      "title": "BBMB Bhakra reservoir bulletin \u2014 indexed snapshots (FRL/MWL + recent)",
+      "kind": "reservoir_level",
+      "status": "obtained",
+      "source_org": "BBMB",
+      "dataset": "BBMB Reservoir Data (indexed bulletin snapshots)",
+      "source_url": "https://www.bbmb.gov.in/index.htm",
+      "retrieved_at": null,
+      "license": "BBMB public bulletin (\u00a9 BBMB)",
+      "spatial_coverage": "Bhakra Dam (31.4156N, 76.4347E) ~45 km upstream of plot",
+      "temporal_coverage": "snapshots: 2025-09-04 and 2026-08-21",
+      "units": "level ft; inflow/outflow cusecs",
+      "datum_note": "BBMB gauge datum in feet; FRL 1680 ft, MWL 1690 ft, top of dam 1700 ft",
+      "resolution_note": "Daily (06:00) bulletin values",
+      "uncertainty_note": "Two independent indexed snapshots: 4 Sep 2025 \u2014 Bhakra 1678.97 ft, inflow 95435, outflow 73459 cusecs; 21 Aug 2026 \u2014Bhakra 1629.32 ft, inflow 48309, outflow 24112 cusecs. FRL constant 1680 ft (\u2248512.06 m). Confidence medium (indexed copies, consistent).",
+      "confidence": "medium",
+      "count": 2,
+      "sample": [
+        {
+          "date": "2025-09-04",
+          "level_ft": 1678.97,
+          "inflow_cusecs": 95435,
+          "outflow_cusecs": 73459
+        },
+        {
+          "date": "2026-08-21",
+          "level_ft": 1629.32,
+          "inflow_cusecs": 48309,
+          "outflow_cusecs": 24112
+        }
+      ],
+      "note": "Bhakra level is the headwater control for any dam-break / release scenario at Ropar; it is upstream-boundary evidence, NOT a plot depth."
+    }
+  ]
+}

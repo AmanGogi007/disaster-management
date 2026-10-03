@@ -1,0 +1,22 @@
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.next/
+out/
+.env
+data/cache/*
+!data/cache/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+*.npz
+.DS_Store
+
+# AI/dev tooling metadata
+.serena/
+.playwright-mcp/
+
+# Build artifacts
+*.tsbuildinfo
