@@ -426,7 +426,7 @@ def _attach_plot(network: HydrologicalNetwork, dem: DEM,
     2. DEM downhill trace → first network node encountered along flow path.
     3. Snap DEM trace endpoint to nearest node.
     """
-    from ..watershed.flow import d8_flow_direction, flow_accumulation
+    from ..watershed.flow import d8_flow_direction, flow_accumulation, valid_mask
     fdir = d8_flow_direction(dem)
     path = trace_downhill(dem, fdir, plot_lat, plot_lon)
 
@@ -437,7 +437,7 @@ def _attach_plot(network: HydrologicalNetwork, dem: DEM,
 
     # Determine if the plot cell is itself a drainage cell (flow accumulation
     # above threshold) — if so, direct attachment is hydrologically sound.
-    facc = flow_accumulation(fdir)
+    facc = flow_accumulation(fdir, valid_mask(dem))
     t = dem.transform
     cr, cc = t.row_at_lat(plot_lat), t.col_at_lon(plot_lon)
     plot_on_drainage = False

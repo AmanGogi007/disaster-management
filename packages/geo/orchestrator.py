@@ -22,6 +22,7 @@ from .terrain.provider import ElevationProvider, get_provider as get_elev_provid
 from .watershed.flow import (
     d8_flow_direction,
     flow_accumulation,
+    valid_mask,
     path_distance_km,
     trace_downhill,
     drainage_direction_cardinal,
@@ -135,7 +136,7 @@ def analyze(
 
     # --- watershed / flow -----------------------------------------------------
     fdir = d8_flow_direction(dem)
-    facc = flow_accumulation(fdir)
+    facc = flow_accumulation(fdir, valid_mask(dem))
     t = dem.transform
     cell_row = t.row_at_lat(lat)
     cell_col = t.col_at_lon(lon)

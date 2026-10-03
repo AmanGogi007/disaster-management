@@ -115,10 +115,18 @@ class AffineTransform:
         return self.origin_lat - (row + 0.5) * self.pixel_size_lat
 
     def col_at_lon(self, lon: float) -> int:
-        return int((lon - self.origin_lon) / self.pixel_size_lon - 0.5)
+        # Cell *containment*, not nearest-centre: column c spans
+        # [origin_lon + c*ps, origin_lon + (c+1)*ps), so floor() is exact.
+        # math.floor and not int() -- int() truncates toward zero, which turned
+        # a point just west of the raster edge (a small negative index) into
+        # column 0 and returned terrain from outside the grid.
+        return math.floor((lon - self.origin_lon) / self.pixel_size_lon)
 
     def row_at_lat(self, lat: float) -> int:
-        return int((self.origin_lat - lat) / self.pixel_size_lat - 0.5)
+        # Row r spans [origin_lat - (r+1)*ps, origin_lat - r*ps). floor, not
+        # int(): see col_at_lon. A point just south of the southern edge must
+        # yield an index >= rows so callers can reject it.
+        return math.floor((self.origin_lat - lat) / self.pixel_size_lat)
 
 
 def save_dem(path: Path, dem: DEM) -> None:

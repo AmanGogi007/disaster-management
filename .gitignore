@@ -20,3 +20,7 @@ data/raw/*
 
 # Build artifacts
 *.tsbuildinfo
+
+# local env overrides
+apps/web/.env.local
+.env.local

@@ -113,9 +113,13 @@ def _local_slope_aspect(dem: DEM, lat: float, lon: float) -> tuple[float | None,
     if dz_dx == 0 and dz_dy == 0:
         aspect_deg = None
     else:
-        # dz_dy is measured along the southward axis (row index ↑ = south ↓).
-        # Use +dz_dy for atan2 so the result points down-slope in compass terms.
-        aspect_rad = math.atan2(dz_dx, dz_dy)
+        # dz_dy is measured along the southward axis (row index ↑ = south ↓),
+        # so +dz_dy points south.  dz_dx points east.  Aspect is the compass
+        # bearing the slope faces, i.e. the downslope direction: north
+        # component = dz_dy, east component = -dz_dx.  Negating dz_dx is what
+        # puts E and W on the correct sides; without it the aspect is mirrored
+        # about the north-south axis (E reports as W).
+        aspect_rad = math.atan2(-dz_dx, dz_dy)
         aspect_deg = (math.degrees(aspect_rad) + 360.0) % 360.0
     return slope_deg, aspect_deg
 

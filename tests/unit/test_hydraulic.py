@@ -517,11 +517,19 @@ def test_flood_extent_records_carry_coverage_and_uncertainty():
 # --- plot-level terrain evidence (terrain_evidence.py, offline logic) ---------
 
 
-def make_terrain_dem(n=81, ps=0.002, center=(1.0, 1.0), pit_depth=12.0):
+def make_terrain_dem(n=81, ps=0.002, center=(1.0, 1.0), pit_depth=12.0,
+                     pit_offset=(4, 0)):
     """Grid DEM: gentle N->S slope + a smooth gaussian pit near the plot cell.
 
     ~0.002° (~220 m) cells, 81x81 -> ~18 km span, so a 3 km radius window is
     fully inside the grid for offline characterisation tests.
+
+    ``pit_offset`` displaces the pit from the grid centre (in cells, +row is
+    south). The plot at ``center`` maps to the cell whose interior contains it,
+    so leaving the pit at offset (0, 0) would place the plot exactly on the pit
+    floor -- the global minimum -- and there would be no lower cell to report
+    as a low point. Offsetting it keeps the plot on the slope above a genuine
+    depression, which is the situation these tests describe.
     """
     lat, lon = center
     span = ps * n
@@ -529,7 +537,7 @@ def make_terrain_dem(n=81, ps=0.002, center=(1.0, 1.0), pit_depth=12.0):
                         pixel_size_lon=ps, pixel_size_lat=ps)
     yy = np.linspace(0, 1, n)[:, None] * np.ones((1, n))
     elev = 120.0 - 40.0 * yy
-    cy, cx = n // 2, n // 2
+    cy, cx = n // 2 + pit_offset[0], n // 2 + pit_offset[1]
     for r in range(n):
         for c in range(n):
             d2 = (r - cy) ** 2 + (c - cx) ** 2
